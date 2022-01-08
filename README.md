@@ -29,5 +29,37 @@ For our database we decided to use PostgreSQL because __  The image below repre
 
 ![](resources/neo_erd.png)
 
+##### Data Sources
+<a href="https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html" target="_blank">Small Object Database Query (NASA)</a>
+
+<a href="https://ssd-api.jpl.nasa.gov/doc/cad.html" target="_blank">SBDB Close Approach Data API (NASA)</a>
+
+#### ETL Process
+![](resources/Neo_Etl_Process-1.png)
+
+
+## Machine Learning
+
+## Dashboard
+
+## Analysis Results
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
