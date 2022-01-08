@@ -2,7 +2,9 @@
 
 Near Earth Objects Project
 
-## NEO Database ERD
+## Entity Relationship Diagram (ERD)
+
+![](resources/neo_erd.png)
 
 ### NEO Data Points
 
