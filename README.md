@@ -1,7 +1,7 @@
 # NEOs Project
 UC Berkeley Data Analytics Bootcamp Final Project
 
-#### Group Members
+#### Group Members:
 |       Member       |      Role      |                   Responsibilities                  |
 |--------------------|----------------|-----------------------------------------------------|
 |Jacqueline Tsodikova|   Technology   |     Will decide which technologies will be used     |
@@ -10,18 +10,24 @@ UC Berkeley Data Analytics Bootcamp Final Project
 |    Robert Janke    |Machine Learning|      Manage the Machine Learning Model & Design     |
 |     Fred Jambor    |Machine Learning|      Manage the Machine Learning Model & Design     |
 
-#### Topic Goals
+#### Goals:
 Overview: 
 Objective:
 
-#### Questions We Would Like to Answer
+#### Questions We Would Like to Answer:
 
-#### Locations of Project Deliverables
+#### Locations of Project Deliverables:
 |           Objective          |    Location   |
 |------------------------------|---------------|
-|         Presentation         | Google Slides*|
-|         Analysis Code        |    Github*    |
-|Machine Learning code & output|    Github*    |
+|         Presentation         |       *       |
+|         Analysis Code        |       *       |
+|Machine Learning code & output|       *       |
 
-## Database:
+## Database
+#### Entity Relationship Diagram (ERD)
+For our database we decided to use PostgreSQL because __  The image below represents the tables of data that we uploaded onto the database. We used three main tables with the data to build and perform the machine learning model with the primary designation being the most common connect between all of our datasets:
+
+![](resources/neo_erd.png)
+
+
 
