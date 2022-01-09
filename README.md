@@ -13,5 +13,11 @@ I then proceeded with elliminating the columns that had null values more than 50
 ## Performing Resampling Supervised machine learning
 For this segment of the project, I used RandomOverSampler and SMOTE python libraries for my machine learning classification models. The target variable is column "pha" which is Ptentially Hazardous Asteroids. A value check on my target variable showed   25,839 0s and 2,213 1s which indicates the imbalance between the number of hazardous vs non-hazardous objects.
 ![image](https://user-images.githubusercontent.com/86033316/148664425-07ec7424-5fa6-41a0-a5dd-f9bef9297cfb.png)
+below is the list of fueature variables "X" for our model
+![image](https://user-images.githubusercontent.com/86033316/148664555-0c185cc1-70a9-41dc-a5b5-80644fe062b5.png)
+Both RandomOverSampler and SMOTE models generated roughly 69% accuracy in their prediction.
+SMOTE resulted in a precision of 95% for "0" and 23% for "1", meaning our model is able to predict the non hazardous objects for 95 percent of the time and is only able to predict the hazardous objects 23 percent of the time. Since our model fails to have an accurate prediction of hazardous object, we will look for further improvements in our data set and also trying different machine learning techniques
+![image](https://user-images.githubusercontent.com/86033316/148664583-f2180c21-fcf3-411c-814e-c2bf3417cdf6.png)
+
 
 
