@@ -29,4 +29,7 @@ For our machine learning, we used the following:
 
 Here is a link to our dashboard: 
 
+<img width="436" alt="Screen Shot 2022-01-09 at 1 48 17 PM" src="https://user-images.githubusercontent.com/88408350/148702326-6df5f31d-cc24-4d8f-ab0c-db3b8c2db952.png">
+
+
 
