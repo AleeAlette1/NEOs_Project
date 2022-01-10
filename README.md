@@ -51,9 +51,7 @@ We have chosen the following:
 
 ### Database 
 
-For our databse, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). 
-
-<img width="561" alt="Screen Shot 2022-01-09 at 1 49 08 PM" src="https://user-images.githubusercontent.com/88408350/148702357-c0562c58-0769-4a1b-a0f5-c3cc098a2088.png">
+For our databse, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). For our dashboard, we will be using Tableau to create a story of our data. 
 
 ### Machine Learning 
 
