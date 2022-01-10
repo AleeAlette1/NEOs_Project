@@ -9,7 +9,13 @@ As the primitive, leftover building blocks of the solar system formation process
 
 #### Why this topic?
 
-Our group chose this topic because 
+Our group chose this topic because we wanted to build a binary classifier model which can predict future NEOs as either potentially hazardous to Earth or not. A new movie on Netflix, *Don't Look Up*, was just released that had to do with a comet approaching Earth and scientists trying to warn the public about it. Although this movie is more about the satire of different characters, a comet or asteroid harming our planet is definitely something that could happen. So, we wanted to research and analyze data to see how likely a NEO could harm us. 
+
+#### Questions We Would Like to Answer:
+
+- Is there gonna be a space object that has the potential to hit our planet? 
+- What is the probability that these objects will be hazardous?
+- Where is the primary designation for the asteroids?
 
 #### Group Members:
 |       Member       |      Role      |                   Responsibilities                  |
@@ -20,11 +26,8 @@ Our group chose this topic because
 |    Robert Janke    |Machine Learning|      Manage the Machine Learning Model & Design     |
 |     Fred Jambor    |Machine Learning|      Manage the Machine Learning Model & Design     |
 
-#### Goals:
-Overview: 
-Objective:
-
-#### Questions We Would Like to Answer:
+#### Communication Protocols
+Our group communicated via zoom 3 different times this week and we all agreed on our roles and the deadline each person had to meet. Because our group is from all over the country, we found it easier to answer any questions or give updates using our Slack group channel. Everyone was able to do their work on time, so our communication protocols are working for our group.
 
 #### Locations of Project Deliverables:
 |           Objective          |    Location   |
@@ -34,8 +37,12 @@ Objective:
 |Machine Learning code & output|       *       |
 
 ## Database
+#### Description 
+
+For our data source and machine learning, we had one person working on our database and two people working on different sets of machine learning. For the database, we used ERD and Postgres to store and anlyze our data. For the machine learning, both people analyzed NEOs that were potentially hazardous to Earth, but they used different methods. The first person used the Random Forest Classifier, which had 92% accuracy, and over/under sampling to test the accuracy of the data set. The second person used RandomOverSampler and SMOTE and found that these model fail to have an accurate prediction of hazardous object. It is always good to test different models on our machine learning to see if any data is skewed or give more accurate results.
+
 #### Entity Relationship Diagram (ERD)
-For our database we decided to use PostgreSQL because __  The image below represents the tables of data that we uploaded onto the database. We used three main tables with the data to build and perform the machine learning model with the primary designation being the most common connect between all of our datasets:
+For our database, since we had over 28,000 rows, we decided to use PostgreSQL because it stores large and sophisticated data safely and we could visually see the relationships between our data. The image below represents the tables of data that we uploaded onto the database. We used three main tables with the data to build and perform the machine learning model with the primary designation being the most common connect between all of our datasets:
 
 ![](resources/neo_erd.png)
 
