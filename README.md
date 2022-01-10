@@ -74,6 +74,103 @@ For our database, since we had over 28,000 rows, we decided to use PostgreSQL be
 
 ![](Database/resources/images/neo_erd.png)
 
+### NEO Data Points
+
+| Field Name     | Type    | Description                                                                                                                                                                                                   |
+|----------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| spkid          | string  | primary SPK-ID                                                                                                                                                                                                |
+| full_name      | string  | full designation (and name)                                                                                                                                                                                   |
+| kind           | string  | indicates whether asteroid (a) or comet (c) and whether numbered (n) or unnumbered (u); for example a value of an indicates a numbered asteroid and cu indicates an unnumbered comet                          |
+| pdes           | string  | primary designation (for numbered asteroids, this is the IAU number); examples: 433, 2016 B1, 1999 AN10                                                                                                       |
+| name           | string  | IAU name (if any); examples: Ceres, Halley, d'Arrest                                                                                                                                                          |
+| prefix         | string  | comet prefix: P, C, D (A for asteroids previously designated as comets)                                                                                                                                       |
+| class          | string  | orbit classification code                                                                                                                                                                                     |
+| neo            | boolean | flag indicating the object is an NEO (Y or N)                                                                                                                                                                 |
+| pha            | boolean | flag indicating the object is a PHA (Potentially Hazardous) (Y or N)                                                                                                                                                                  |
+| t_jup          | number  | Jupiter Tisserand parameter                                                                                                                                                                                   |
+| moid           | number  | minimum distance between the orbits of Earth and the small-body (au); use moid.ld for units in lunar distances (LD)                                                                                           |
+| moid_jup       | number  | minimum distance between the orbits of Jupiter and the small-body (au)                                                                                                                                        |
+| orbit_id       | string  | orbit solution ID                                                                                                                                                                                             |
+| epoch          | number  | epoch of osculation in Julian day form (TDB); use epoch.mjd for modified Julian day form; use epoch.cal for calendar form YYYY-MM-DD.D                                                                        |
+| equinox        | string  | equinox of reference frame (e.g., J2000)                                                                                                                                                                      |
+| e              | number  | eccentricity                                                                                                                                                                                                  |
+| a              | number  | semimajor axis (au)                                                                                                                                                                                           |
+| q              | number  | perihelion distance (au)                                                                                                                                                                                      |
+| i              | number  | inclination (deg)                                                                                                                                                                                             |
+| om             | number  | longitude of the ascending node (deg)                                                                                                                                                                         |
+| w              | number  | argument of perihelion (deg)                                                                                                                                                                                  |
+| ma             | number  | mean anomaly (deg)                                                                                                                                                                                            |
+| tp             | number  | time of perihelion passage in Julian day form (TDB); use tp.cal for calendar form YYYY-MM-DD.D                                                                                                                |
+| per            | number  | orbital period (d); use per.y for orbital period in Julian years (y)                                                                                                                                          |
+| n              | number  | mean motion (deg/d)                                                                                                                                                                                           |
+| ad             | number  | aphelion distance (au)                                                                                                                                                                                        |
+| sigma_e        | number  | 1-sigma uncertainty in the eccentricity                                                                                                                                                                       |
+| sigma_a        | number  | 1-sigma uncertainty in the semimajor axis (au)                                                                                                                                                                |
+| sigma_q        | number  | 1-sigma uncertainty in the perihelion distance (au)                                                                                                                                                           |
+| sigma_i        | number  | 1-sigma uncertainty in the inclination (deg)                                                                                                                                                                  |
+| sigma_om       | number  | 1-sigma uncertainty in the longitude of the ascending node (deg)                                                                                                                                              |
+| sigma_w        | number  | 1-sigma uncertainty in the argument of perihelion (deg)                                                                                                                                                       |
+| sigma_tp       | number  | 1-sigma uncertainty in the time of perihelion passage (d)                                                                                                                                                     |
+| sigma_ma       | number  | 1-sigma uncertainty in the mean anomaly (deg)                                                                                                                                                                 |
+| sigma_per      | number  | 1-sigma uncertainty in the period (d)                                                                                                                                                                         |
+| sigma_n        | number  | 1-sigma uncertainty in the mean motion (deg/d)                                                                                                                                                                |
+| sigma_ad       | number  | 1-sigma uncertainty in the aphelion distance (au)                                                                                                                                                             |
+| source         | string  | code indicating the source of the orbit: ORB=”JPL orbit file”, MPC:mpn=”MPC numbered asteroid orbit file”, MPC:mpu=”MPC unnumbered asteroid orbit file”, MPC:mp1=”MPC single opposition short-arc orbit file” |
+| soln_date      | string  | date/time of orbit determination (YYYY-MM-DD hh:mm:ss, Pacific Local)                                                                                                                                         |
+| producer       | string  | name of the person or institution responsible for the orbit determination                                                                                                                                     |
+| data_arc       | number  | number of days spanned by the observations used in the orbit determination                                                                                                                                    |
+| first_obs      | string  | date of the first observation used in the orbit (YYYY-MM-DD or YYYY-??-?? when only the year is known)                                                                                                        |
+| last_obs       | string  | date of the last observation used in the orbit (YYYY-MM-DD or YYYY-??-?? when only the year is known)                                                                                                         |
+| n_obs_used     | number  | total number of observations of all types used in the orbit                                                                                                                                                   |
+| n_del_obs_used | number  | number of radar delay observations used in the orbit                                                                                                                                                          |
+| n_dop_obs_used | number  | number of radar Doppler observations used in the orbit                                                                                                                                                        |
+| two_body       | string  | flag indicating a low-precision 2-body dynamic model was used in the OD                                                                                                                                       |
+| pe_used        | string  | JPL internal ID of the planetary ephemeris used in the OD                                                                                                                                                     |
+| sb_used        | string  | JPL internal ID of the small-body ephemeris used in the OD                                                                                                                                                    |
+| condition_code | string  | MPC “U” parameter: orbit uncertainty estimate 0-9, with 0 being good, and 9 being highly uncertain                                                                                                            |
+| rms            | number  | normalized RMS of the observation fit in the OD                                                                                                                                                               |
+| A1             | number  | non-grav. radial parameter                                                                                                                                                                                    |
+| A2             | number  | non-grav. transverse parameter                                                                                                                                                                                |
+| A3             | number  | non-grav. normal parameter                                                                                                                                                                                    |
+| DT             | number  | non-grav. peri.-maximum offset (d)                                                                                                                                                                           |
+| H              | number  | absolute magnitude (magnitude at 1 au from the Sun and the observer)                                                                                                                                          |
+| G              | number  | magnitude slope parameter used in the standard asteroid H/G magnitude law                                                                                                                                     |
+| M1             | number  | comet total magnitude parameter                                                                                                                                                                               |
+| K1             | number  | comet total magnitude slope parameter                                                                                                                                                                        |
+| M2             | number  | comet total magnitude parameter                                                                                                                                                                            |
+| K2             | number  | comet nuclear magnitude parameter                                                                                                                                                                                                           |
+| PC             | number  | comet nuclear magnitude law - phase coefficient                                                                               |
+| H_sigma        | number  | 1-sigma uncertainty in absolute magnitude H                                                                                                                                                                      |
+| diameter       | number  | effective body diameter (km)                                                                                                                                                                                  |
+| extent         | string  | tri(or bi)-axial body dimensions (km)                                                                                                                                                                         |
+| GM             | number  | mass expressed as a product of the mass “M” and gravitational constant “G” (km3/s2)                                                                                                                           |
+| density        | number  | bulk density (g/cm3)                                                                                                                                                                                          |
+| rot_per        | number  | body rotation period (synodic) (h)                                                                                                                                                                            |
+| pole           | string  | spin-pole direction in R.A./Dec. (deg)                                                                                                                                                                        |
+| albedo         | number  | geometric albedo                                                                                                                                                                                              |
+| BV             | number  | color index B-V                                                                                                                                                                                               |
+| UB             | number  | color index U-B                                                                                                                                                                                               |
+| IR             | number  | color index I-R                                                                                                                                                                                               |
+| spec_T         | string  | Tholen spectral taxonomic classification                                                                                                                                                                      |
+| spec_B         | string  | SMASSII spectral taxonomic classification                                                                                                                                                                     |
+| diameter_sigma | number  | 1-sigma formal (or estimated) uncertainty in diameter                                                                                                                                                        |
+
+### Close Approaches Data Points
+
+| Field Name | Type      | Description                                                          |
+|------------|-----------|----------------------------------------------------------------------|
+| des        | string    | primary designation of the asteroid or comet (e.g.                   |
+| orbit_id   | string    | orbit ID                                                             |
+| jd         | string    | time of close-approach (JD Ephemeris Time)                           |
+| cd         | timestamp | time of close-approach (formatted calendar date/time                 |
+| dist       | number    | nominal approach distance (au)                                       |
+| dist_min   | number    | minimum (3-sigma) approach distance (au)                             |
+| dist_max   | number    | maximum (3-sigma) approach distance (au)                             |
+| v_rel      | number    | velocity relative to the approach body at close approach (km/s)      |
+| v_inf      | number    | velocity relative to a massless body (km/s)                          |
+| t_sigma_f  | number    | 3-sigma uncertainty in the time of close-approach (formatted in days |
+| h          | number    | absolute magnitude H (mag)  
+
 ### ETL Process
 ![](Database/resources/images/Neo_Etl_Process-1.png)
 
