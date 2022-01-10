@@ -9,7 +9,7 @@ As the primitive, leftover building blocks of the solar system formation process
 
 #### Why this topic?
 
-Our group chose this topic because we wanted to build a binary classifier model which can predict future NEOs as either potentially hazardous to Earth or not. A new movie on Netflix, *Don't Look Up*, was just released that had to do with a comet approaching Earth and scientists trying to warn the public about it. Although this movie is more about the satire of different characters, a comet or asteroid harming our planet is definitely something that could happen. So, we wanted to research and analyze data to see how likely a NEO could harm us. 
+Our group chose this topic because we wanted to build a binary classifier model which can predict future NEOs as either potentially hazardous to Earth or not. A new movie on Netflix, *Don't Look Up*, was just released that had to do with a comet approaching Earth and scientists trying to warn the public about it. Although this movie is more about the satire of different characters, a comet or asteroid harming our planet is definitely something that could happen. So, we wanted to research and analyze the data to see how likely a NEO could harm us. 
 
 #### Questions We Would Like to Answer:
 
