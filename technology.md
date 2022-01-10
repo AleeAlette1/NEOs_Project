@@ -13,8 +13,6 @@ We have chosen the following:
 - Random Forest Classifier to test our Machine Learning
 - Pandas for cleaning the data 
 
-etc....
-
 ## Database 
 
 For our databse, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). 
