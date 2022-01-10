@@ -54,7 +54,7 @@ For our database, since we had over 28,000 rows, we decided to use PostgreSQL be
 
 <a href="https://ssd-api.jpl.nasa.gov/doc/cad.html" target="_blank">SBDB Close Approach Data API (NASA)</a>
 
-<a href= "https://cneos.jpl.nasa.gov/about/basics.html" target="_blank">SBDB NEOs Basics (NASA)</a>
+<a href= "https://cneos.jpl.nasa.gov/about/basics.html" target="_blank"> NEOs Basics (NASA)</a>
 
 ## Machine Learning
 
