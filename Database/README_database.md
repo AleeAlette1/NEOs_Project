@@ -214,7 +214,7 @@ https://ssd-api.jpl.nasa.gov/cad.api?des=433&date-min=1900-01-01&date-max=2100-0
 ```
 
 ## ETL Process
-![](resources/Neo_Etl_Process-1.png)
+![](resources/images/Neo_Etl_Process-1.png)
 
 ## References
 
