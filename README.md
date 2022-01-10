@@ -88,7 +88,8 @@ These 2 methods worked better, in that they identified more true positives. It i
 #### One Last Test with SMOTEENN
 This seemed to work a lot better. Accuracy is still not great, but that is more because of the false positives, which is better than a false negative when dealing with asteroid impacts. We still have a high rate of false negatives, with our recall at 0.75, or about 25% of the actual impacts are predicted to be misses. Need to see if we can clean that up in a future model.
 
-## Dashboard
+
+###Dashboard
 
 ## Analysis Results
 
