@@ -68,11 +68,15 @@ We then proceeded with eliminating the columns that had null values more than 50
 #### Performing Resampling Supervised Machine Learning
 For this segment of the project, we used Random-Over-Sampler and SMOTE python libraries for pur machine learning classification models. The target variable is column "PHA" which stands for Potentially Hazardous Asteroids. A value check on our target variable showed   25,839 0s and 2,213 1s which indicates the imbalance between the number of hazardous vs non-hazardous objects.
 ![image](https://user-images.githubusercontent.com/86033316/148664425-07ec7424-5fa6-41a0-a5dd-f9bef9297cfb.png)
+
 below is the list of feature variables "X" for our model
+
 ![image](https://user-images.githubusercontent.com/86033316/148664555-0c185cc1-70a9-41dc-a5b5-80644fe062b5.png)
+
 Both Random-Over-Sampler and SMOTE models generated roughly 69% accuracy in their prediction.
 SMOTE resulted in a precision of 95% for "0" and 23% for "1", meaning our model is able to predict the non hazardous objects for 95% of the time and is only able to predict the hazardous objects 23% of the time. 
 Since our model fails to have an accurate prediction of hazardous object, we will look for further improvements in our data set and also trying different machine learning techniques
+
 ![image](https://user-images.githubusercontent.com/86033316/148664583-f2180c21-fcf3-411c-814e-c2bf3417cdf6.png)
 
 #### Cleaning up Data: 
@@ -89,7 +93,7 @@ These 2 methods worked better, in that they identified more true positives. It i
 This seemed to work a lot better. Accuracy is still not great, but that is more because of the false positives, which is better than a false negative when dealing with asteroid impacts. We still have a high rate of false negatives, with our recall at 0.75, or about 25% of the actual impacts are predicted to be misses. Need to see if we can clean that up in a future model.
 
 
-###Dashboard
+### Dashboard
 
 ## Analysis Results
 
