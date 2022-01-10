@@ -9,6 +9,7 @@ As the primitive, leftover building blocks of the solar system formation process
 
 #### Why this topic?
 
+Our group chose this topic because 
 
 #### Group Members:
 |       Member       |      Role      |                   Responsibilities                  |
