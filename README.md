@@ -7,7 +7,7 @@ Near-Earth Objects (NEOs) are comets and asteroids that have been nudged by the 
 
 As the primitive, leftover building blocks of the solar system formation process, comets and asteroids offer clues to the chemical mixture from which the planets formed some 4.6 billion years ago. If we wish to know the composition of the primordial mixture from which the planets formed, then we must determine the chemical constituents of the leftover debris from this formation process - the comets and asteroids.
 
-#### WHy this topic?
+#### Why this topic?
 
 
 #### Group Members:
