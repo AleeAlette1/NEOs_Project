@@ -13,9 +13,9 @@ Our group chose this topic because we wanted to build a binary classifier model 
 
 #### Questions We Would Like to Answer:
 
-- Is there gonna be a space object that has the potential to hit our planet? 
-- What is the probability that these objects will be hazardous?
-- Where is the primary designation for the asteroids?
+1. Is there gonna be a space object that has the potential to hit our planet?
+2. What is the probability that these objects will be hazardous?
+3. Where is the primary designation for the asteroids?
 
 #### Group Members:
 |       Member       |      Role      |                   Responsibilities                  |
