@@ -36,7 +36,7 @@ Our group communicated via zoom 3 different times this week and we all agreed on
 |         Analysis Code        |       *       |
 |Machine Learning code & output|       *       |
 
-#### Description for our Source of Data
+#### Descriptions of our Data
 
 For our data source and machine learning, we had one person working on our database and two people working on different sets of machine learning. For the database, we used ERD and Postgres to store and anlyze our data. For the machine learning, both people analyzed NEOs that were potentially hazardous to Earth, but they used different methods. The first person used the Random Forest Classifier, which had 92% accuracy, and over/under sampling to test the accuracy of the data set. The second person used RandomOverSampler and SMOTE and found that these model fail to have an accurate prediction of hazardous object. It is always good to test different models on our machine learning to see if any data is skewed or give more accurate results.
 
