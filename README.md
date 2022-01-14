@@ -217,6 +217,9 @@ Over and under sampling worked better because they identified more true positive
 This method seemed to work much better. However, accuracy is still not great, mostly due to false positives, which is better than a false negative when dealing with asteroid impacts. We still have a high rate of false negatives, with our recall at 0.75, or about 25% of the actual impacts are predicted to be misses. Need to see if we can clean that up in a future model.
 
 ## Dashboard
+We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. Some data we are planning to show are maps of the different points in the world an asteroid could hit, the probability of an asteroid hitting us using different graphs, a plot graph of the asteroids that are the biggest threat, and much more.
+
+We were also thinking to incorporate a list of things to do in case one is approaching and a list of things to store in your house in case of an emergency.
 
 ## Analysis Results
 
