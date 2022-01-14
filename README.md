@@ -52,6 +52,7 @@ We have chosen the following:
 - Entity Relationship Diagram (ERD) to model the data stored in our database
 - Random Forest Classifier to test our Machine Learning
 - Pandas for cleaning the data 
+- A public AWS RDS database to store our data
 
 ### Database 
 
