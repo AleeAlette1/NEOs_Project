@@ -13,9 +13,9 @@ Our group chose this topic because we wanted to build a binary classifier model 
 
 ## Questions We Would Like to Answer:
 
-1. Is there going to be a space object that has the potential to hit our planet?
-2. What is the probability that these objects will be hazardous?
-3. What is the name of the NEO(s) that are potentially hazardous?
+1. How many close approach objects will we have in the next decade?
+2. Can we predict potentially hazardous objects in the future?
+3. Which NEOs are the most potentially hazardous?
 
 ## Outline of the Project:
 - 
