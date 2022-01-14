@@ -17,6 +17,9 @@ Our group chose this topic because we wanted to build a binary classifier model 
 2. What is the probability that these objects will be hazardous?
 3. What is the name of the NEO(s) that are potentially hazardous?
 
+## Outline of the Project:
+- 
+
 ## Group Members:
 |       Member       |      Role      |                   Responsibilities                  |
 |--------------------|----------------|-----------------------------------------------------|
