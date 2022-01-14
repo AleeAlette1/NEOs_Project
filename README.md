@@ -54,6 +54,21 @@ We have chosen the following:
 - Pandas for cleaning the data 
 - A public AWS RDS database to store our data
 
+## Dashboard
+We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. Some data we are planning to show are maps of the different points in the world an asteroid could hit, the probability of an asteroid hitting us using different graphs, a plot graph of the asteroids that are the biggest threat, and much more.
+
+We were also thinking to incorporate a list of things to do in case one is approaching and a list of things to store in your house in case of an emergency.
+
+<img width="558" alt="Screen Shot 2022-01-13 at 8 09 09 PM" src="https://user-images.githubusercontent.com/88408350/149450049-5c209ab7-2e21-45bc-9b47-aeeeb17379d3.png">
+
+On top of working in Tableau, we have been working on our presentation in Google Slides. Here we will visually and orally explain our project. We will address the following: 
+- Selected topic
+- Reason topic was selected
+- Description of the source of data
+- Questions the team hopes to answer with the data
+- Description of the data exploration phase of the project
+- Description of the analysis phase of the project
+
 ### Database 
 
 For our databse, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). For our dashboard, we will be using Tableau to create a story of our data. 
@@ -216,21 +231,6 @@ Over and under sampling worked better because they identified more true positive
 
 ### One Last Test with SMOTEENN
 This method seemed to work much better. However, accuracy is still not great, mostly due to false positives, which is better than a false negative when dealing with asteroid impacts. We still have a high rate of false negatives, with our recall at 0.75, or about 25% of the actual impacts are predicted to be misses. Need to see if we can clean that up in a future model.
-
-## Dashboard
-We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. Some data we are planning to show are maps of the different points in the world an asteroid could hit, the probability of an asteroid hitting us using different graphs, a plot graph of the asteroids that are the biggest threat, and much more.
-
-We were also thinking to incorporate a list of things to do in case one is approaching and a list of things to store in your house in case of an emergency.
-
-<img width="558" alt="Screen Shot 2022-01-13 at 8 09 09 PM" src="https://user-images.githubusercontent.com/88408350/149450049-5c209ab7-2e21-45bc-9b47-aeeeb17379d3.png">
-
-On top of working in Tableau, we have been working on our presentation in Google Slides. Here we will visually and orally explain our project. We will address the following: 
-- Selected topic
-- Reason topic was selected
-- Description of the source of data
-- Questions the team hopes to answer with the data
-- Description of the data exploration phase of the project
-- Description of the analysis phase of the project
 
 ## Analysis Results
 
