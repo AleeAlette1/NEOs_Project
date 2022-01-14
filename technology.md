@@ -33,5 +33,7 @@ Here is a link to our dashboard:
 
 <img width="436" alt="Screen Shot 2022-01-09 at 1 48 17 PM" src="https://user-images.githubusercontent.com/88408350/148702326-6df5f31d-cc24-4d8f-ab0c-db3b8c2db952.png">
 
+We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. Some data we are planning to show are maps of the different points in the world an asteroid could hit, the probability of an asteroid hitting us, a plot graph of the asteroids that are the biggest, etc.
 
+some things to do in case one is approaching
 
