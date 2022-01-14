@@ -37,3 +37,10 @@ We will be using Tablaeu to create our final dashboard because it is visually ap
 
 We were also thinking to incorporate a list of things to do in case one is approaching and a list of things to store in case of an emergency.
 
+On top of Tableau, we have been working on our presentation in Google Slides. Here we will visually and orally explain our project. We will address the following: 
+- Selected topic
+- Reason topic was selected
+- Description of the source of data
+- Questions the team hopes to answer with the data
+- Description of the data exploration phase of the project
+- Description of the analysis phase of the project
