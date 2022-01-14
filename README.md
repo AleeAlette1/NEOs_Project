@@ -36,7 +36,7 @@ Our group chose this topic because we wanted to build a binary classifier model 
 ### Locations of Project Deliverables:
 |           Objective          |    Location   |
 |------------------------------|---------------|
-|         Presentation         |       *       |
+|         Presentation         |<a href= "https://docs.google.com/presentation/d/1BQlw8KsA-17b0CTgA-Jki0ccUJvn-29yCgjgTW-MsKI/edit?usp=sharing*" target="_blank"> NEOs Google Slide</a>  |
 |         Analysis Code        |       *       |
 |Machine Learning code & output|       *       |
 
