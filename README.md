@@ -222,6 +222,8 @@ We will be using Tablaeu to create our final dashboard because it is visually ap
 
 We were also thinking to incorporate a list of things to do in case one is approaching and a list of things to store in your house in case of an emergency.
 
+<img width="558" alt="Screen Shot 2022-01-13 at 8 09 09 PM" src="https://user-images.githubusercontent.com/88408350/149450049-5c209ab7-2e21-45bc-9b47-aeeeb17379d3.png">
+
 On top of working in Tableau, we have been working on our presentation in Google Slides. Here we will visually and orally explain our project. We will address the following: 
 - Selected topic
 - Reason topic was selected
