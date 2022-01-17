@@ -2,7 +2,7 @@
 
 A detailed description of the process for extracting Near Earth Objects and Close approaches data, transformation and loading into an AWS RDS database.
 
-![](resources/ETL%20Process%20Detail.png)
+![](resources/images/ETL_Process_Detail.png)
 
 ### Close Approaches Data
 The close approaches data consists of a historical dataset of asteroid close approaches to Earth which includes distance and velocity attributes
