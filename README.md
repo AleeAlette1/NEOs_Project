@@ -18,7 +18,11 @@ Our group chose this topic because we wanted to build a binary classifier model 
 3. Which NEOs are the most potentially hazardous?
 
 ## Outline of the Project:
-- 
+- Used PostgreSQL to store our data and created five main tables to build and perform the machine learning model using the primary designation as the main key. 
+- Crated our ETL process for extracting NEOs and Close Approaches, which included transforming and loading the data into an AWS RDS database. 
+- Prepared our dataset by cleaning up and dropping any columns that were not significant to our project.
+- Conducted Random-Over-Sampler, SMOTE, Random Forest, Over and Under Sampling and SMOTEENN tests to populate NEOS that are potentially hazardous to Earth as accurate as possible.
+- Created Google Slides and Tablaeu dashboard to provide a visually appealing and interactive presentation to our audience. 
 
 ## Group Members:
 |       Member       |      Role      |                   Responsibilities                  |
@@ -83,7 +87,7 @@ SciKitLearn is the ML library we'll be using to create a classifier. We used the
 
 ## Descriptions of our Data
 
-For our data source and machine learning, we had one person working on our database and two people working on different sets of machine learning. For the database, we used ERD and Postgres to store and anlyze our data. For the machine learning, both people analyzed NEOs that were potentially hazardous to Earth, but they used different methods. The first person used the Random Forest Classifier, which had 92% accuracy, and over/under sampling to test the accuracy of the data set. The second person used RandomOverSampler and SMOTE and found that these model fail to have an accurate prediction of hazardous object. It is always good to test different models on our machine learning to see if any data is skewed or give more accurate results.
+For our data source and machine learning, we had one person working on our database and two people working on different sets of machine learning. For the database, we used ERD and Postgres to store and analyze our data. For the machine learning, both people analyzed NEOs that were potentially hazardous to Earth, but they used different methods. The first person used the Random Forest Classifier, which had 92% accuracy, and over/under sampling to test the accuracy of the data set. The second person used RandomOverSampler and SMOTE and found that these model fail to have an accurate prediction of hazardous object. It is always good to test different models on our machine learning to see if any data is skewed or give more accurate results.
 
 ## Database
 
@@ -219,12 +223,12 @@ The asteroids classified as Near-Earth objects were downloaded manually from the
 
 ## Machine Learning
 ### Pre-Processing of the Dataset:
-For the first segment of our project, we randomly selected a csv file with 28052 rows and 36 columns. We initially dropped string columns containing names and IDs for these objects ("full_name and "orbit_ID" columns). Then I went ahead and dropped ['equinox', 'PC'] columns "epoch.cal column includes epoch of osculation in calendar for each row. In astronomy, an epoch or reference epoch is a moment in time used as a reference point for some time-varying astronomical quantity. I decided to drop this column momentarily since it has no impact on our analysis. We then proceeded with eliminating the columns that had null values more than 50 percent of the total number of rows and then replaced the other null values with zero. The Potentially Hazardous Asteroids (PHA) column had string values of yes and no, which indicates whether it is a hazardous object.
+For the first segment of our project, we randomly selected a csv file with 28052 rows and 36 columns. We initially dropped string columns containing names and IDs for these objects ("full_name and "orbit_ID" columns). Then we went ahead and dropped ['equinox', 'PC'] columns "epoch.cal column includes epoch of osculation in calendar for each row. In astronomy, an epoch or reference epoch is a moment in time used as a reference point for some time-varying astronomical quantity. We decided to drop this column momentarily since it has no impact on our analysis. We then proceeded with eliminating the columns that had null values more than 50 percent of the total number of rows and then replaced the other null values with zero. The Potentially Hazardous Asteroids (PHA) column had string values of yes and no, which indicates whether it is a hazardous object.
 
 ![image](https://user-images.githubusercontent.com/86033316/148664174-a9fb267e-e49d-4119-b8b2-85a2dba7c3f3.png)
 
 ### Performing Resampling Supervised Machine Learning
-For this segment of the project, we used Random-Over-Sampler and SMOTE python libraries for pur machine learning classification models. The target variable is column "PHA" which stands for Potentially Hazardous Asteroids. A value check on our target variable showed   25,839 0s and 2,213 1s which indicates the imbalance between the number of hazardous vs non-hazardous objects.
+For this segment of the project, we used Random-Over-Sampler and SMOTE python libraries for our machine learning classification models. The target variable is column "PHA" which stands for Potentially Hazardous Asteroids. A value check on our target variable showed   25,839 0s and 2,213 1s which indicates the imbalance between the number of hazardous vs non-hazardous objects.
 ![image](https://user-images.githubusercontent.com/86033316/148664425-07ec7424-5fa6-41a0-a5dd-f9bef9297cfb.png)
 
 Below is the list of feature variables "X" for our model
