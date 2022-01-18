@@ -24,6 +24,32 @@ Our group chose this topic because we wanted to build a binary classifier model 
 - Conducted Random-Over-Sampler, SMOTE, Random Forest, Over and Under Sampling and SMOTEENN tests to populate NEOS that are potentially hazardous to Earth as accurate as possible.
 - Created Google Slides and Tablaeu dashboard to provide a visually appealing and interactive presentation to our audience. 
 
+### Dashboard
+We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. Some data we are planning to show are maps of the different points in the world an asteroid could hit, the probability of an asteroid hitting us using different graphs, a scatterplot of the asteroids that are the biggest threat, and much more.
+
+We were also thinking to incorporate a list of things to do in case one is approaching and a list of things to store in your house in case of an emergency.
+
+<img width="558" alt="Screen Shot 2022-01-13 at 8 09 09 PM" src="https://user-images.githubusercontent.com/88408350/149450049-5c209ab7-2e21-45bc-9b47-aeeeb17379d3.png">
+
+On top of working in Tableau, we have been working on our presentation in Google Slides. Here we will visually and orally explain our project. We will address the following: 
+- Selected topic
+- Reason topic was selected
+- Description of the source of data
+- Questions the team hopes to answer with the data
+- Description of the data exploration phase of the project
+- Description of the analysis phase of the project
+
+### Database 
+
+For our databse, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). For our dashboard, we will be using Tableau to create a story of our data. 
+
+### Machine Learning 
+
+SciKitLearn is the ML library we'll be using to create a classifier. We used the following:  
+- Random Forest Classifier because it provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of a large proportion of data. Our data sets are 92% accurate. 
+- RandomOverSampler involves randomly duplicating examples from the minority class and adding them to the training dataset. This technique can be effective for those machine learning algorithms that are affected by a skewed distribution and where multiple duplicate examples for a given class can influence the fit of the model
+- SMOTE(synthetic minority oversampling technique) is one of the most commonly used oversampling methods to solve the imbalance problem. It aims to balance class distribution by randomly increasing minority class examples by replicating them
+
 ## Group Members:
 |       Member       |      Role      |                   Responsibilities                  |
 |--------------------|----------------|-----------------------------------------------------|
@@ -57,33 +83,6 @@ We have chosen the following:
 - Random Forest Classifier to test our Machine Learning
 - Pandas for cleaning the data 
 - A public AWS RDS database to store our data
-
-## Dashboard
-We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. Some data we are planning to show are maps of the different points in the world an asteroid could hit, the probability of an asteroid hitting us using different graphs, a scatterplot of the asteroids that are the biggest threat, and much more.
-
-We were also thinking to incorporate a list of things to do in case one is approaching and a list of things to store in your house in case of an emergency.
-
-<img width="558" alt="Screen Shot 2022-01-13 at 8 09 09 PM" src="https://user-images.githubusercontent.com/88408350/149450049-5c209ab7-2e21-45bc-9b47-aeeeb17379d3.png">
-
-On top of working in Tableau, we have been working on our presentation in Google Slides. Here we will visually and orally explain our project. We will address the following: 
-- Selected topic
-- Reason topic was selected
-- Description of the source of data
-- Questions the team hopes to answer with the data
-- Description of the data exploration phase of the project
-- Description of the analysis phase of the project
-
-### Database 
-
-For our databse, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). For our dashboard, we will be using Tableau to create a story of our data. 
-
-### Machine Learning 
-
-SciKitLearn is the ML library we'll be using to create a classifier. We used the following:  
-- Random Forest Classifier because it provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of a large proportion of data. Our data sets are 92% accurate. 
-- RandomOverSampler involves randomly duplicating examples from the minority class and adding them to the training dataset. This technique can be effective for those machine learning algorithms that are affected by a skewed distribution and where multiple duplicate examples for a given class can influence the fit of the model
-- SMOTE(synthetic minority oversampling technique) is one of the most commonly used oversampling methods to solve the imbalance problem. It aims to balance class distribution by randomly increasing minority class examples by replicating them
-
 
 ## Descriptions of our Data
 
@@ -213,6 +212,16 @@ https://ssd-api.jpl.nasa.gov/cad.api?date-min=2022-01-01&date-max=2100-01-01&dis
 
 ### Near-Earth Obects (NEO)
 The asteroids classified as Near-Earth objects were downloaded manually from the NASA/JPL web site as a CSV file. This dataset is transformed via pySpark on Google Colab and loaded into the AWS RDS Neo database.
+
+​
+​
+​
+| Notebook                 | Description         |
+|--------------------------|---------------------|
+| Spark_DataFrame_Neo_CSV  | Extract, Transform and Load Neo CSV file into AWS Neo database  |
+| Spark_DataFrame_Neo_Json | Extract, Transform, and Load Close Approach Json data into AWS Neo database|
+​
+
 
 #### Data Sources
 <a href="https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html" target="_blank">Small Object Database Query (NASA)</a>
