@@ -14,6 +14,8 @@ We have chosen the following:
 - Pandas for cleaning the data 
 - A public AWS RDS database to store our data
 
+For slides: talk about 3 main ones and put it at the top as a quick description
+
 ## Database 
 
 For our databse, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). 
