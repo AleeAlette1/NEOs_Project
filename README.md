@@ -3,6 +3,18 @@ UC Berkeley Data Analytics Bootcamp Final Project
 
 <a href= "https://docs.google.com/presentation/d/1BQlw8KsA-17b0CTgA-Jki0ccUJvn-29yCgjgTW-MsKI/edit?usp=sharing*" target="_blank"> NEOs Google Slide</a> 
 
+## Group Members:
+|       Member       |      Role      |                   Responsibilities                  |
+|--------------------|----------------|-----------------------------------------------------|
+|Jacqueline Tsodikova|   Technology   |     Will decide which technologies will be used     |
+|  Alejandra Magana  |     Github     |          Responsible for Github repository          |
+|   Michael Albers   |    Database    |Create mockup of a database with a set of sample data|
+|    Robert Janke    |Machine Learning|      Manage the Machine Learning Model & Design     |
+|     Fred Jambor    |Machine Learning|      Manage the Machine Learning Model & Design     |
+
+## Communication Protocols
+- For our communication we met via Zoom for several stand up meetings. We also actively used the group Slack channel. Our team met up both during class hours and outside of class hours as well.
+
 ## Introduction 
 
 Near-Earth Objects (NEOs) are comets and asteroids that have been nudged by the gravitational attraction of nearby planets into orbits that allow them to enter the Earth’s neighborhood. Composed mostly of water ice with embedded dust particles, comets originally formed in the cold outer planetary system while most of the rocky asteroids formed in the warmer inner solar system between the orbits of Mars and Jupiter. The scientific interest in comets and asteroids is due largely to their status as the relatively unchanged remnant debris from the solar system formation process some 4.6 billion years ago. The giant outer planets (Jupiter, Saturn, Uranus, and Neptune) formed from an agglomeration of billions of comets and the left over bits and pieces from this formation process are the comets we see today. Likewise, today’s asteroids are the bits and pieces left over from the initial agglomeration of the inner planets that include Mercury, Venus, Earth, and Mars.
@@ -26,6 +38,20 @@ Our group chose this topic because we wanted to build a binary classifier model 
 - Conducted Random-Over-Sampler, SMOTE, Random Forest, Over and Under Sampling and SMOTEENN tests to populate NEOS that are potentially hazardous to Earth as accurate as possible.
 - Created Google Slides and Tablaeu dashboard to provide a visually appealing and interactive presentation to our audience. 
 
+## Technologies Used
+
+Which tools are the best fit for your project? 
+
+We have chosen the following: 
+- PostgreSQL to store large and sophisticated data safely
+- PySpark to have a wide range of libraries and use it for Machine Learning Analysis. It provides simple and comprehensive API.
+- CSV files to read data and then to import into a spreadsheet or another storage database
+- Tableau to create a dashboard and story for presenting our analysis 
+- Entity Relationship Diagram (ERD) to model the data stored in our database
+- Random Forest Classifier to test our Machine Learning
+- Pandas for cleaning the data 
+- A public AWS RDS database to store our data
+
 ### Dashboard
 We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. Some data we are planning to show are maps of the different points in the world an asteroid could hit, the probability of an asteroid hitting us using different graphs, a scatterplot of the asteroids that are the biggest threat, and much more.
 
@@ -43,46 +69,16 @@ On top of working in Tableau, we have been working on our presentation in Google
 
 ### Database 
 
-For our databse, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). For our dashboard, we will be using Tableau to create a story of our data. 
+For our database, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). For our dashboard, we will be using Tableau to create a story of our data. 
 
 ### Machine Learning 
-
 SciKitLearn is the ML library we'll be using to create a classifier. We used the following:  
 - Random Forest Classifier because it provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of a large proportion of data. Our data sets are 92% accurate. 
 - RandomOverSampler involves randomly duplicating examples from the minority class and adding them to the training dataset. This technique can be effective for those machine learning algorithms that are affected by a skewed distribution and where multiple duplicate examples for a given class can influence the fit of the model
 - SMOTE(synthetic minority oversampling technique) is one of the most commonly used oversampling methods to solve the imbalance problem. It aims to balance class distribution by randomly increasing minority class examples by replicating them
 
-## Group Members:
-|       Member       |      Role      |                   Responsibilities                  |
-|--------------------|----------------|-----------------------------------------------------|
-|Jacqueline Tsodikova|   Technology   |     Will decide which technologies will be used     |
-|  Alejandra Magana  |     Github     |          Responsible for Github repository          |
-|   Michael Albers   |    Database    |Create mockup of a database with a set of sample data|
-|    Robert Janke    |Machine Learning|      Manage the Machine Learning Model & Design     |
-|     Fred Jambor    |Machine Learning|      Manage the Machine Learning Model & Design     |
-
-## Communication Protocols
-- For our communication we met via Zoom for several stand up meetings. We also actively used the group Slack channel. Our team met up both during class hours and outside of class hours as well.
-
-## Technologies Used
-
-Which tools are the best fit for your project? 
-
-We have chosen the following: 
-- PostgreSQL to store large and sophisticated data safely
-- PySpark to have a wide range of libraries and use it for Machine Learning Analysis. It provides simple and comprehensive API.
-- CSV files to read data and then to import into a spreadsheet or another storage database
-- Tableau to create a dashboard and story for presenting our analysis 
-- Entity Relationship Diagram (ERD) to model the data stored in our database
-- Random Forest Classifier to test our Machine Learning
-- Pandas for cleaning the data 
-- A public AWS RDS database to store our data
-
 ## Descriptions of our Data
-
-For our data source and machine learning, we had one person working on our database and two people working on different sets of machine learning. For the database, we used ERD and Postgres to store and analyze our data. For the machine learning, both people analyzed NEOs that were potentially hazardous to Earth, but they used different methods. The first person used the Random Forest Classifier, which had 92% accuracy, and over/under sampling to test the accuracy of the data set. The second person used RandomOverSampler and SMOTE and found that these model fail to have an accurate prediction of hazardous object. It is always good to test different models on our machine learning to see if any data is skewed or give more accurate results.
-
-
+For our data and machine learning, we had one person working on our database and two people working on different sets of machine learning. For the database, we used ERD and Postgres to store and analyze our data. For the machine learning, both people analyzed NEOs that were potentially hazardous to Earth, but they used different methods. The first person used the Random Forest Classifier, which had 92% accuracy, and over/under sampling to test the accuracy of the data set. The second person used RandomOverSampler and SMOTE and found that these model fail to have an accurate prediction of hazardous object. It is always good to test different models on our machine learning to see if any data is skewed or give more accurate results.
 
 ## Machine Learning
 ### Pre-Processing of the Dataset:
