@@ -17,3 +17,11 @@ To improve the accuracy of our model, we sorted the features by their performanc
 ![image](https://user-images.githubusercontent.com/86033316/150715204-f1ab0561-dfea-47a3-9253-dc13ad05dd45.png)
 
 Our group decided to select top 4 important features from snippet above in addition to velocity variables ("v_inf" & "v_rel") from CAD (Close Approaches Data) to build a Neural Networks model.
+See below snippet for an overview of our model's properties
+![image](https://user-images.githubusercontent.com/86033316/150722947-38bd4e79-506e-458b-bee6-34c84a323f22.png)
+As illustrated in above snippet, we can see that our model consists of two hidden layer with total of 12 hidden nodes in each layer. We selected "Relu" activation function for each layer.
+
+Please see below results of our neural networks model:
+
+![image](https://user-images.githubusercontent.com/86033316/150722903-697dd8b1-73a2-4603-beb6-2e1ddeee140f.png)
+
