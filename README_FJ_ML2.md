@@ -11,5 +11,9 @@ Our RandomForest Sampling revealed satisfactory results. Please see below snippe
 ![image](https://user-images.githubusercontent.com/86033316/150716443-27608e59-62fb-429c-b83d-eb0fb58599a3.png)
 
 As indicated in the confusion matrix, after running 5624 predictions on our data, there was a total of (4) false predictions on NEOs that were potentially hazardous but our model prediction was a non-hazardous object.
+
+### Performing Neural Networks to generate more accurate predictions
 To improve the accuracy of our model, we sorted the features by their performance by calculating the feature importance by RandomForestSampling model. See below snippet :
 ![image](https://user-images.githubusercontent.com/86033316/150715204-f1ab0561-dfea-47a3-9253-dc13ad05dd45.png)
+
+Our group decided to select top 4 important features from snippet above in addition to velocity variables ("v_inf" & "v_rel") from CAD (Close Approaches Data) to build a Neural Networks model.
