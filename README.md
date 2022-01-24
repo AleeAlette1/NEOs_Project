@@ -120,7 +120,7 @@ For our database, since we had over 28,000 rows, we decided to use PostgreSQL be
 
 ![](Database/Resources/images/neo_erd_diagram.png)
 
-Here is the link to our NEO Data Points
+[Here is the link to our NEO Data Points](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossery/CloseApproachesREADME.md)
 
 Here is the link to our Close Approaches Data Points
                                                                                                                                                  
