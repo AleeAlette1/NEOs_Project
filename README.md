@@ -118,7 +118,7 @@ This method seemed to work much better. However, accuracy is still not great, mo
 ### Entity Relationship Diagram (ERD)
 For our database, since we had over 28,000 rows, we decided to use PostgreSQL because it stores large and sophisticated data safely and we could visually see the relationships between our data. The image below represents the tables of data that we uploaded onto the database. We used five main tables with the data to build and perform the machine learning model with the primary designation being the most common connection between all of our datasets:
 
-![](Database/Resources/images/neo_erd.png)
+![](Database/Resources/images/neo_erd_diagram.png)
 
 Here is the link to our NEO Data Points
 
