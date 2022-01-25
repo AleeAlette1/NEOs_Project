@@ -55,7 +55,7 @@ We have chosen the following:
 ### Dashboard
 We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. Some data we are planning to show are maps of the different points in the world an asteroid could hit, the probability of an asteroid hitting us using different graphs, a scatterplot of the asteroids that are the biggest threat, and much more.
 
-We were also thinking to incorporate a list of things to do in case one is approaching and a list of things to store in your house in case of an emergency.
+We will also incorporate a list of things to do in case one is approaching and a list of things to store in your house in case of an emergency as an interactive element
 
 <img width="558" alt="Screen Shot 2022-01-13 at 8 09 09 PM" src="https://user-images.githubusercontent.com/88408350/149450049-5c209ab7-2e21-45bc-9b47-aeeeb17379d3.png">
 
