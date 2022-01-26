@@ -1,4 +1,4 @@
-![](Database/Resources/images/ETL_Process_Detail.png)
+![](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Resources/images/ETL_Process_Detail.png)
 
 ### Close Approaches Data
 The close approaches data consists of a historical dataset of asteroid close appraoches to Earth which includes distance and velocity attributes. 
