@@ -23,4 +23,3 @@ The asteroids classified as Near-Earth objects were downloaded manually from the
 |--------------------------|---------------------|
 | [Spark_DataFrame_Neo_CSV](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/ipynb/Spark_DataFrame_Neo_Csv.ipynb)  | Extract, Transform and Load Neo CSV file into AWS Neo database  |
 | [Spark_DataFrame_Neo_Json](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/ipynb/Spark_DataFrame_Neo_Json.ipynb) | Extract, Transform, and Load Close Approach Json data into AWS Neo database|
-​
