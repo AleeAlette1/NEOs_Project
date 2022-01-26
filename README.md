@@ -140,6 +140,8 @@ For our database, since we had over 28,000 rows, we decided to use PostgreSQL be
 ### ETL Process
 A detailed description of the process of extracting Near Earth Objects and Close Approaches data, transformation and loading into an AWS RDS database. 
 
+[Here is a link to a Detailed ETL Process](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/README/Detail_ETL_Process.md)
+
 
 #### Data Sources
 <a href="https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html" target="_blank">Small Object Database Query (NASA)</a>
