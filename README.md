@@ -119,7 +119,7 @@ This method seemed to work much better. However, accuracy is still not great, mo
 
 [Here is the link to our Close Approaches Data Points](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossery/DataPointREADME.md)
 
-[Here is the link to our Sequal Scripts](https://github.com/AleeAlette1/NEOs_Project/tree/main/Database/sql)
+[Here is the link to our SQL Scripts](https://github.com/AleeAlette1/NEOs_Project/tree/main/Database/sql)
 
 ### Entity Relationship Diagram (ERD)
 For our database, since we had over 28,000 rows, we decided to use PostgreSQL because it stores large and sophisticated data safely and we could visually see the relationships between our data. The image below represents the tables of data that we uploaded onto the database. We used five main tables with the data to build and perform the machine learning model with the primary designation being the most common connection between all of our datasets:
