@@ -126,7 +126,7 @@ For our database, since we had over 28,000 rows, we decided to use PostgreSQL be
 
 ![](Database/Resources/images/neo_erd_diagram.png)
 
-## Database Tables
+### Database Tables
 
 | Table Name    | Source Data                                                                                        |
 |---------------|----------------------------------------------------------------------------------------------------|
