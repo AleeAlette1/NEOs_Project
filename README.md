@@ -149,6 +149,7 @@ We initially performed a RandomForestSampling on our data using below variables:
 For more information about these variables please refer to the Glossary link below:
 
 [NEO Data Points Glossary](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossary/CloseApproachesREADME.md)
+
 [Close Approaches Data Points Glossary](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossary/DataPointREADME.md)
 
 Our RandomForest Sampling revealed satisfactory results. Please see below snippet of confusion matrix for our RandomForest Sampling:
