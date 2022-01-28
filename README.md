@@ -49,7 +49,7 @@ We have chosen the following:
 - Pandas for cleaning the data 
 - A public AWS RDS database to store our data
 
-### Dashboard
+### Dashboard Overview
 We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. Some data we are planning to show are maps of the different points in the world an asteroid could hit, the probability of an asteroid hitting us using different graphs, a scatterplot of the asteroids that are the biggest threat, and much more.
 
 We will also incorporate a list of things to do in case one is approaching and a list of things to store in your house in case of an emergency as an interactive element
@@ -64,11 +64,10 @@ On top of working in Tableau, we have been working on our presentation in Google
 - Description of the data exploration phase of the project
 - Description of the analysis phase of the project
 
-### Database 
-
+### Database Overview
 For our database, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). For our dashboard, we will be using Tableau to create a story of our data. 
 
-### Machine Learning 
+### Machine Learning Overview
 SciKitLearn is the ML library we'll be using to create a classifier. We used the following:  
 - Random Forest Classifier because it provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of a large proportion of data. Our data sets are 92% accurate. 
 - RandomOverSampler involves randomly duplicating examples from the minority class and adding them to the training dataset. This technique can be effective for those machine learning algorithms that are affected by a skewed distribution and where multiple duplicate examples for a given class can influence the fit of the model
@@ -77,44 +76,12 @@ SciKitLearn is the ML library we'll be using to create a classifier. We used the
 ## Descriptions of our Data
 For our data and machine learning, we had one person working on our database and two people working on different sets of machine learning. For the database, we used ERD and Postgres to store and analyze our data. For the machine learning, both people analyzed NEOs that were potentially hazardous to Earth, but they used different methods. The first person used the Random Forest Classifier, which had 92% accuracy, and over/under sampling to test the accuracy of the data set. The second person used RandomOverSampler and SMOTE and found that these model fail to have an accurate prediction of hazardous object. It is always good to test different models on our machine learning to see if any data is skewed or give more accurate results.
 
-## Machine Learning
-### Pre-Processing of the Dataset:
-For the first segment of our project, we randomly selected a csv file with 28052 rows and 36 columns. We initially dropped string columns containing names and IDs for these objects ("full_name and "orbit_ID" columns). Then we went ahead and dropped ['equinox', 'PC'] columns "epoch.cal column includes epoch of osculation in calendar for each row. In astronomy, an epoch or reference epoch is a moment in time used as a reference point for some time-varying astronomical quantity. We decided to drop this column momentarily since it has no impact on our analysis. We then proceeded with eliminating the columns that had null values more than 50 percent of the total number of rows and then replaced the other null values with zero. The Potentially Hazardous Asteroids (PHA) column had string values of yes and no, which indicates whether it is a hazardous object.
-
-![image](https://user-images.githubusercontent.com/86033316/148664174-a9fb267e-e49d-4119-b8b2-85a2dba7c3f3.png)
-
-### Performing Resampling Supervised Machine Learning
-For this segment of the project, we used Random-Over-Sampler and SMOTE python libraries for our machine learning classification models. The target variable is column "PHA" which stands for Potentially Hazardous Asteroids. A value check on our target variable showed   25,839 0s and 2,213 1s which indicates the imbalance between the number of hazardous vs non-hazardous objects.
-![image](https://user-images.githubusercontent.com/86033316/148664425-07ec7424-5fa6-41a0-a5dd-f9bef9297cfb.png)
-
-Below is the list of feature variables "X" for our model
-
-![image](https://user-images.githubusercontent.com/86033316/148664555-0c185cc1-70a9-41dc-a5b5-80644fe062b5.png)
-
-Both Random-Over-Sampler and SMOTE models generated roughly 69% accuracy in their prediction.
-SMOTE resulted in a precision of 95% for "0" and 23% for "1", meaning our model is able to predict the non hazardous objects for 95% of the time and is only able to predict the hazardous objects 23% of the time. 
-Since our model fails to have an accurate prediction of hazardous object, we will look for further improvements in our data set and also trying different machine learning techniques
-
-![image](https://user-images.githubusercontent.com/86033316/148664583-f2180c21-fcf3-411c-814e-c2bf3417cdf6.png)
-
-### Cleaning up Data: 
-- Dropped all NAN for the Potentially Hazardous Asteroids and converted Y/N to 1 or 0. 
-- Created 3 different datasets to run through a random forest. Noticed that set 1 had a lot of NANs in regards to size of asteroid, so we will not use that set in ML model.
-
-### Random Forest for 2 of the Data Sets
-As stated, only used DS2 and DS3 as DS1 which had too many NAN values. Both datasets showed to be good models with the Random Forest Classifier, with around 92% accuracy. However, we noticed in DS2 that the precision for an impact was low, indicating that we are getting a lot of false negatives. This is concerning if we are looking for impacts because we might miss them. A big problem could be that we have many more negative PHA outcomes than positive. Hence, I will try oversampling or undersampling to see if that helps.
-
-### Over and Under Sampling for DS2
-Over and under sampling worked better because they identified more true positives. It is a bit concerning that there are still many false negatives, almost 40% of actual impacts were classified wrong in the oversampling (228 predicted wrong, 325 predicted correctly) and similar results for the undersampling. The main change here is a drop in accuracy in that we have more false positives - predicted impacts that are not actual impacts.
-
-### One Last Test with SMOTEENN
-This method seemed to work much better. However, accuracy is still not great, mostly due to false positives, which is better than a false negative when dealing with asteroid impacts. We still have a high rate of false negatives, with our recall at 0.75, or about 25% of the actual impacts are predicted to be misses. Need to see if we can clean that up in a future model.
 
 ## Database
 
-[Here is the link to our NEO Data Points](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossery/CloseApproachesREADME.md)
+[Here is the link to our NEO Data Points](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossary/CloseApproachesREADME.md)
 
-[Here is the link to our Close Approaches Data Points](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossery/DataPointREADME.md)
+[Here is the link to our Close Approaches Data Points](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossary/DataPointREADME.md)
 
 [Here is the link to our SQL Scripts](https://github.com/AleeAlette1/NEOs_Project/tree/main/Database/sql)
 
@@ -138,6 +105,69 @@ For our database, since we had over 28,000 rows, we decided to use PostgreSQL be
 A detailed description of the process of extracting Near Earth Objects and Close Approaches data, transformation and loading into an AWS RDS database. 
 
 [Here is a link to a Detailed ETL Process](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/README/Detail_ETL_Process.md)
+
+## Machine Learning
+### Pre-Processing of the Dataset:
+For the first segment of our project, we randomly selected a csv file with 28,052 rows and 36 columns. We initially dropped string columns containing names and IDs for these objects ("full_name and "orbit_ID" columns). Then we went ahead and dropped ['equinox', 'PC'] columns "epoch.cal" column includes epoch of osculation in calendar for each row. In astronomy, an epoch or reference epoch is a moment in time used as a reference point for some time-varying astronomical quantity. We decided to drop this column momentarily since it has no impact on our analysis. We then proceeded with eliminating the columns that had null values more than 50 percent of the total number of rows and then replaced the other null values with zero. The Potentially Hazardous Asteroids (PHA) column had string values of yes and no, which indicates whether it is a hazardous object.
+
+- Dropped all NAN for the Potentially Hazardous Asteroids and converted Y/N to 1 or 0. 
+- Created 3 different datasets to run through a random forest. Noticed that set 1 had a lot of NANs in regards to size of asteroid, so we will not use that set in ML model.
+
+
+![image](https://user-images.githubusercontent.com/86033316/148664174-a9fb267e-e49d-4119-b8b2-85a2dba7c3f3.png)
+
+### Performing Resampling Supervised Machine Learning
+For this segment of the project, we used Random-Over-Sampler and SMOTE python libraries for our machine learning classification models. The target variable is column "PHA" which stands for Potentially Hazardous Asteroids. A value check on our target variable showed   25,839 0s and 2,213 1s which indicates the imbalance between the number of hazardous vs non-hazardous objects.
+![image](https://user-images.githubusercontent.com/86033316/148664425-07ec7424-5fa6-41a0-a5dd-f9bef9297cfb.png)
+
+Below is the list of feature variables "X" for our model
+
+![image](https://user-images.githubusercontent.com/86033316/148664555-0c185cc1-70a9-41dc-a5b5-80644fe062b5.png)
+
+Both Random-Over-Sampler and SMOTE models generated roughly 69% accuracy in their prediction.
+SMOTE resulted in a precision of 95% for "0" and 23% for "1", meaning our model is able to predict the non hazardous objects for 95% of the time and is only able to predict the hazardous objects 23% of the time. 
+Since our model fails to have an accurate prediction of hazardous object, we will look for further improvements in our data set and also trying different machine learning techniques
+
+![image](https://user-images.githubusercontent.com/86033316/148664583-f2180c21-fcf3-411c-814e-c2bf3417cdf6.png)
+
+
+### Random Forest for 2 of the Mockup Data Sets
+As stated, only used DS2 and DS3 as DS1 which had too many NAN values. Both datasets showed to be good models with the Random Forest Classifier, with around 92% accuracy. However, we noticed in DS2 that the precision for an impact was low, indicating that we are getting a lot of false negatives. This is concerning if we are looking for impacts because we might miss them. A big problem could be that we have many more negative PHA outcomes than positive. Hence, I will try oversampling or undersampling to see if that helps. 
+
+### Over and Under Sampling for DS2
+Over and under sampling worked better because they identified more true positives. It is a bit concerning that there are still many false negatives, almost 40% of actual impacts were classified wrong in the oversampling (228 predicted wrong, 325 predicted correctly) and similar results for the undersampling. The main change here is a drop in accuracy in that we have more false positives - predicted impacts that are not actual impacts.
+
+### One Last Test with SMOTEENN
+This method seemed to work much better. However, accuracy is still not great, mostly due to false positives, which is better than a false negative when dealing with asteroid impacts. We still have a high rate of false negatives, with our recall at 0.75, or about 25% of the actual impacts are predicted to be misses. Need to see if we can clean that up in a future model.
+
+### Performing RandomForest Sampling on our merged DataFrame
+
+We initially performed a RandomForestSampling on our data using below variables:
+
+['h', 'e', 'a', 'q', 'i', 'om', 'w', 'ma', 'ad', 'n', 'per', 'per_y', 'moid', 'moid_ld', 'moid_jup', 't_jup', 'sigma_e', 'sigma_a', 'sigma_q', 'sigma_i', 'sigma_om', 'sigma_w', 'sigma_ma', 'sigma_ad', 'sigma_n', 'sigma_tp', 'sigma_per', 'data_arc', 'condition_code', 'rms', 'dist', 'dist_min', 'dist_max', 'v_rel', 'v_inf', 'h_cad', 'class_AMO', 'class_APO', 'class_ATE', 'class_ETc', 'class_HTC', 'class_IEO', 'class_JFC', 'class_JFc']
+
+For more information about these variables please refer to the Glossary link below:
+[NEO Data Points](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossary/CloseApproachesREADME.md)
+
+[Close Approaches Data Points](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossary/DataPointREADME.md)
+
+Our RandomForest Sampling revealed satisfactory results. Please see below snippet of confusion matrix for our RandomForest Sampling:
+![image](https://user-images.githubusercontent.com/86033316/150716443-27608e59-62fb-429c-b83d-eb0fb58599a3.png)
+
+As indicated in the confusion matrix, after running 5624 predictions on our data, there was a total of (4) false predictions on NEOs that were potentially hazardous but our model prediction was a non-hazardous object.
+
+### Performing Neural Networks to generate more accurate predictions
+To improve the accuracy of our model, we sorted the features by their performance by calculating the feature importance by RandomForestSampling model. See below snippet :
+![image](https://user-images.githubusercontent.com/86033316/150715204-f1ab0561-dfea-47a3-9253-dc13ad05dd45.png)
+
+Our group decided to select top 4 important features from snippet above in addition to velocity variables ("v_inf" & "v_rel") from CAD (Close Approaches Data) to build a Neural Networks model.
+See below snippet for an overview of our model's properties
+![image](https://user-images.githubusercontent.com/86033316/150722947-38bd4e79-506e-458b-bee6-34c84a323f22.png)
+As illustrated in above snippet, we can see that our model consists of two hidden layer with total of 12 hidden nodes in each layer. We selected "Relu" activation function for each layer.
+
+Please see below results of our neural networks model:
+
+![image](https://user-images.githubusercontent.com/86033316/150722903-697dd8b1-73a2-4603-beb6-2e1ddeee140f.png)
 
 
 #### Data Sources
