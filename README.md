@@ -29,11 +29,11 @@ Our group chose this topic because we wanted to build a binary classifier model 
 3. Which NEOs are the most potentially hazardous?
 
 ## Outline of the Project:
-- Used PostgreSQL to store our data and created five main tables to build and perform the machine learning model using the primary designation as the main key. 
-- Crated our ETL process for extracting NEOs and Close Approaches, which included transforming and loading the data into an AWS RDS database. 
-- Prepared our dataset by cleaning up and dropping any columns that were not significant to our project.
-- Conducted Random-Over-Sampler, SMOTE, Random Forest, Over and Under Sampling and SMOTEENN tests to populate NEOS that are potentially hazardous to Earth as accurate as possible.
-- Created Google Slides and Tablaeu dashboard to provide a visually appealing and interactive presentation to our audience. 
+- Used PostgreSQL to store our data and created five main tables to build and perform the machine learning model using the primary designation as the main key
+- Crated our ETL process for extracting NEOs and Close Approaches, which included transforming and loading the data into an AWS RDS database 
+- Prepared our dataset by cleaning up and dropping any columns that were not significant to our project
+- Conducted Random-Over-Sampler, SMOTE, Random Forest, Over and Under Sampling and SMOTEENN tests to populate NEOS that are potentially hazardous to Earth as accurate as possible
+- Created Google Slides and Tablaeu dashboard to provide a visually appealing and interactive presentation to our audience
 
 <img width="802" alt="Screen Shot 2022-01-27 at 8 53 28 PM" src="https://user-images.githubusercontent.com/88408350/151489489-793a3b44-f5af-4c23-8966-26256269d141.png">
 
@@ -71,7 +71,7 @@ For our database, we have used pgAdmin within PostgreSQL to see the connections 
 
 ### Machine Learning Overview
 SciKitLearn is the ML library we'll be using to create a classifier. We used the following:  
-- Random Forest Classifier because it provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of a large proportion of data. Our data sets are 92% accurate. 
+- Random Forest Classifier because it provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of a large proportion of data. Our data sets are 92% accurate 
 - RandomOverSampler involves randomly duplicating examples from the minority class and adding them to the training dataset. This technique can be effective for those machine learning algorithms that are affected by a skewed distribution and where multiple duplicate examples for a given class can influence the fit of the model
 - SMOTE(synthetic minority oversampling technique) is one of the most commonly used oversampling methods to solve the imbalance problem. It aims to balance class distribution by randomly increasing minority class examples by replicating them
 
@@ -112,8 +112,8 @@ A detailed description of the process of extracting Near Earth Objects and Close
 ### Pre-Processing of the Dataset:
 For the first segment of our project, we randomly selected a csv file with 28,052 rows and 36 columns. We initially dropped string columns containing names and IDs for these objects ("full_name and "orbit_ID" columns). Then we went ahead and dropped ['equinox', 'PC'] columns "epoch.cal" column includes epoch of osculation in calendar for each row. In astronomy, an epoch or reference epoch is a moment in time used as a reference point for some time-varying astronomical quantity. We decided to drop this column momentarily since it has no impact on our analysis. We then proceeded with eliminating the columns that had null values more than 50 percent of the total number of rows and then replaced the other null values with zero. The Potentially Hazardous Asteroids (PHA) column had string values of yes and no, which indicates whether it is a hazardous object.
 
-- Dropped all NAN for the Potentially Hazardous Asteroids and converted Y/N to 1 or 0. 
-- Created 3 different datasets to run through a random forest. Noticed that set 1 had a lot of NANs in regards to size of asteroid, so we will not use that set in ML model.
+- Dropped all NAN for the Potentially Hazardous Asteroids and converted Y/N to 1 or 0
+- Created 3 different datasets to run through a random forest. Noticed that set 1 had a lot of NANs in regards to size of asteroid, so we will not use that set in ML model
 
 
 ![image](https://user-images.githubusercontent.com/86033316/148664174-a9fb267e-e49d-4119-b8b2-85a2dba7c3f3.png)
