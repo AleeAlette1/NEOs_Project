@@ -35,6 +35,8 @@ Our group chose this topic because we wanted to build a binary classifier model 
 - Conducted Random-Over-Sampler, SMOTE, Random Forest, Over and Under Sampling and SMOTEENN tests to populate NEOS that are potentially hazardous to Earth as accurate as possible.
 - Created Google Slides and Tablaeu dashboard to provide a visually appealing and interactive presentation to our audience. 
 
+<img width="802" alt="Screen Shot 2022-01-27 at 8 53 28 PM" src="https://user-images.githubusercontent.com/88408350/151489489-793a3b44-f5af-4c23-8966-26256269d141.png">
+
 ## Technologies Used
 
 Which tools are the best fit for your project? 
