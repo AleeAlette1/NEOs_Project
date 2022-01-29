@@ -12,9 +12,6 @@ UC Berkeley Data Analytics Bootcamp Final Project
 |    Robert Janke    |Machine Learning|      Manage the Machine Learning Model & Design     |
 |     Fred Jambor    |Machine Learning|      Manage the Machine Learning Model & Design     |
 
-## Communication Protocols
-- For our communication we met via Zoom for several stand up meetings. We also actively used the group Slack channel. Our team met up both during class hours and outside of class hours as well.
-
 ## Introduction 
 
 Near-Earth Objects (NEOs) are comets and asteroids that have been nudged by the gravitational attraction of nearby planets into orbits that allow them to enter the Earth’s neighborhood. Composed mostly of water ice with embedded dust particles, comets originally formed in the cold outer planetary system while most of the rocky asteroids formed in the warmer inner solar system between the orbits of Mars and Jupiter. The scientific interest in comets and asteroids is due largely to their status as the relatively unchanged remnant debris from the solar system formation process some 4.6 billion years ago. The giant outer planets (Jupiter, Saturn, Uranus, and Neptune) formed from an agglomeration of billions of comets and the left over bits and pieces from this formation process are the comets we see today. Likewise, today’s asteroids are the bits and pieces left over from the initial agglomeration of the inner planets that include Mercury, Venus, Earth, and Mars.
@@ -32,11 +29,13 @@ Our group chose this topic because we wanted to build a binary classifier model 
 3. Which NEOs are the most potentially hazardous?
 
 ## Outline of the Project:
-- Used PostgreSQL to store our data and created five main tables to build and perform the machine learning model using the primary designation as the main key. 
-- Crated our ETL process for extracting NEOs and Close Approaches, which included transforming and loading the data into an AWS RDS database. 
-- Prepared our dataset by cleaning up and dropping any columns that were not significant to our project.
-- Conducted Random-Over-Sampler, SMOTE, Random Forest, Over and Under Sampling and SMOTEENN tests to populate NEOS that are potentially hazardous to Earth as accurate as possible.
-- Created Google Slides and Tablaeu dashboard to provide a visually appealing and interactive presentation to our audience. 
+- Used PostgreSQL to store our data and created five main tables to build and perform the machine learning model using the primary designation as the main key
+- Crated our ETL process for extracting NEOs and Close Approaches, which included transforming and loading the data into an AWS RDS database 
+- Prepared our dataset by cleaning up and dropping any columns that were not significant to our project
+- Conducted Random-Over-Sampler, SMOTE, Random Forest, Over and Under Sampling and SMOTEENN tests to populate NEOS that are potentially hazardous to Earth as accurate as possible
+- Created Google Slides and Tablaeu dashboard to provide a visually appealing and interactive presentation to our audience
+
+<img width="802" alt="Screen Shot 2022-01-27 at 8 53 28 PM" src="https://user-images.githubusercontent.com/88408350/151489489-793a3b44-f5af-4c23-8966-26256269d141.png">
 
 ## Technologies Used
 
@@ -44,7 +43,7 @@ Which tools are the best fit for your project?
 
 We have chosen the following: 
 - PostgreSQL to store large and sophisticated data safely
-- PySpark to have a wide range of libraries and use it for Machine Learning Analysis. It provides simple and comprehensive API.
+- PySpark to have a wide range of libraries and use it for Machine Learning Analysis to provide simple and comprehensive API
 - CSV files to read data and then to import into a spreadsheet or another storage database
 - Tableau to create a dashboard and story for presenting our analysis 
 - Entity Relationship Diagram (ERD) to model the data stored in our database
@@ -52,10 +51,10 @@ We have chosen the following:
 - Pandas for cleaning the data 
 - A public AWS RDS database to store our data
 
-### Dashboard
+### Dashboard Overview
 We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. Some data we are planning to show are maps of the different points in the world an asteroid could hit, the probability of an asteroid hitting us using different graphs, a scatterplot of the asteroids that are the biggest threat, and much more.
 
-We were also thinking to incorporate a list of things to do in case one is approaching and a list of things to store in your house in case of an emergency.
+We will also incorporate a list of things to do in case one is approaching and a list of things to store in your house in case of an emergency as an interactive element
 
 <img width="558" alt="Screen Shot 2022-01-13 at 8 09 09 PM" src="https://user-images.githubusercontent.com/88408350/149450049-5c209ab7-2e21-45bc-9b47-aeeeb17379d3.png">
 
@@ -67,22 +66,55 @@ On top of working in Tableau, we have been working on our presentation in Google
 - Description of the data exploration phase of the project
 - Description of the analysis phase of the project
 
-### Database 
-
+### Database Overview
 For our database, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). For our dashboard, we will be using Tableau to create a story of our data. 
 
-### Machine Learning 
+### Machine Learning Overview
 SciKitLearn is the ML library we'll be using to create a classifier. We used the following:  
-- Random Forest Classifier because it provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of a large proportion of data. Our data sets are 92% accurate. 
+- Random Forest Classifier because it provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of a large proportion of data. Our data sets are 92% accurate 
 - RandomOverSampler involves randomly duplicating examples from the minority class and adding them to the training dataset. This technique can be effective for those machine learning algorithms that are affected by a skewed distribution and where multiple duplicate examples for a given class can influence the fit of the model
 - SMOTE(synthetic minority oversampling technique) is one of the most commonly used oversampling methods to solve the imbalance problem. It aims to balance class distribution by randomly increasing minority class examples by replicating them
 
 ## Descriptions of our Data
 For our data and machine learning, we had one person working on our database and two people working on different sets of machine learning. For the database, we used ERD and Postgres to store and analyze our data. For the machine learning, both people analyzed NEOs that were potentially hazardous to Earth, but they used different methods. The first person used the Random Forest Classifier, which had 92% accuracy, and over/under sampling to test the accuracy of the data set. The second person used RandomOverSampler and SMOTE and found that these model fail to have an accurate prediction of hazardous object. It is always good to test different models on our machine learning to see if any data is skewed or give more accurate results.
 
+
+## Database
+
+[Here is the link to our NEO Data Points Glossary](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossary/CloseApproachesREADME.md)
+
+[Here is the link to our Close Approaches Data Points Glossary](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossary/DataPointREADME.md)
+
+[Here is the link to our SQL Scripts](https://github.com/AleeAlette1/NEOs_Project/tree/main/Database/sql)
+
+### Entity Relationship Diagram (ERD)
+For our database, since we had over 28,000 rows, we decided to use PostgreSQL because it stores large and sophisticated data safely and we could visually see the relationships between our data. The image below represents the tables of data that we uploaded onto the database. We used five main tables with the data to build and perform the machine learning model with the primary designation being the most common connection between all of our datasets:
+
+![](Database/Resources/images/neo_erd_diagram.png)
+
+### Database Tables
+
+| Table Name    | Source Data                                                                                        |
+|---------------|----------------------------------------------------------------------------------------------------|
+| Neo           | CSV file downloaded from NASA website                                                              |
+| Cad           | API call to NASA website to pull current and future close approaches data up to year 2100          |
+| Cad_history   | API call to NASA website to pull historical close approaches data dating back to year 1900         |
+| mlcsv_future  | Join query from most recent close approach in CAD table with Neo table. See **join_query_future.sql**  |
+| mlcsv_history | Join query from most recent close approach in CAD history table with Neo table. See **join_query.sql** |
+
+                                                              
+### ETL Process
+A detailed description of the process of extracting Near Earth Objects and Close Approaches data, transformation and loading into an AWS RDS database. 
+
+[Here is a link to a Detailed ETL Process](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/README/Detail_ETL_Process.md)
+
 ## Machine Learning
 ### Pre-Processing of the Dataset:
-For the first segment of our project, we randomly selected a csv file with 28052 rows and 36 columns. We initially dropped string columns containing names and IDs for these objects ("full_name and "orbit_ID" columns). Then we went ahead and dropped ['equinox', 'PC'] columns "epoch.cal column includes epoch of osculation in calendar for each row. In astronomy, an epoch or reference epoch is a moment in time used as a reference point for some time-varying astronomical quantity. We decided to drop this column momentarily since it has no impact on our analysis. We then proceeded with eliminating the columns that had null values more than 50 percent of the total number of rows and then replaced the other null values with zero. The Potentially Hazardous Asteroids (PHA) column had string values of yes and no, which indicates whether it is a hazardous object.
+For the first segment of our project, we randomly selected a csv file with 28,052 rows and 36 columns. We initially dropped string columns containing names and IDs for these objects ("full_name and "orbit_ID" columns). Then we went ahead and dropped ['equinox', 'PC'] columns "epoch.cal" column includes epoch of osculation in calendar for each row. In astronomy, an epoch or reference epoch is a moment in time used as a reference point for some time-varying astronomical quantity. We decided to drop this column momentarily since it has no impact on our analysis. We then proceeded with eliminating the columns that had null values more than 50 percent of the total number of rows and then replaced the other null values with zero. The Potentially Hazardous Asteroids (PHA) column had string values of yes and no, which indicates whether it is a hazardous object.
+
+- Dropped all NAN for the Potentially Hazardous Asteroids and converted Y/N to 1 or 0
+- Created 3 different datasets to run through a random forest. Noticed that set 1 had a lot of NANs in regards to size of asteroid, so we will not use that set in ML model
+
 
 ![image](https://user-images.githubusercontent.com/86033316/148664174-a9fb267e-e49d-4119-b8b2-85a2dba7c3f3.png)
 
@@ -100,12 +132,9 @@ Since our model fails to have an accurate prediction of hazardous object, we wil
 
 ![image](https://user-images.githubusercontent.com/86033316/148664583-f2180c21-fcf3-411c-814e-c2bf3417cdf6.png)
 
-### Cleaning up Data: 
-- Dropped all NAN for the Potentially Hazardous Asteroids and converted Y/N to 1 or 0. 
-- Created 3 different datasets to run through a random forest. Noticed that set 1 had a lot of NANs in regards to size of asteroid, so we will not use that set in ML model.
 
-### Random Forest for 2 of the Data Sets
-As stated, only used DS2 and DS3 as DS1 which had too many NAN values. Both datasets showed to be good models with the Random Forest Classifier, with around 92% accuracy. However, we noticed in DS2 that the precision for an impact was low, indicating that we are getting a lot of false negatives. This is concerning if we are looking for impacts because we might miss them. A big problem could be that we have many more negative PHA outcomes than positive. Hence, I will try oversampling or undersampling to see if that helps.
+### Random Forest for 2 of the Mockup Data Sets
+As stated, only used DS2 and DS3 as DS1 which had too many NAN values. Both datasets showed to be good models with the Random Forest Classifier, with around 92% accuracy. However, we noticed in DS2 that the precision for an impact was low, indicating that we are getting a lot of false negatives. This is concerning if we are looking for impacts because we might miss them. A big problem could be that we have many more negative PHA outcomes than positive. Hence, I will try oversampling or undersampling to see if that helps. 
 
 ### Over and Under Sampling for DS2
 Over and under sampling worked better because they identified more true positives. It is a bit concerning that there are still many false negatives, almost 40% of actual impacts were classified wrong in the oversampling (228 predicted wrong, 325 predicted correctly) and similar results for the undersampling. The main change here is a drop in accuracy in that we have more false positives - predicted impacts that are not actual impacts.
@@ -113,47 +142,38 @@ Over and under sampling worked better because they identified more true positive
 ### One Last Test with SMOTEENN
 This method seemed to work much better. However, accuracy is still not great, mostly due to false positives, which is better than a false negative when dealing with asteroid impacts. We still have a high rate of false negatives, with our recall at 0.75, or about 25% of the actual impacts are predicted to be misses. Need to see if we can clean that up in a future model.
 
-## Database
+### Performing RandomForest Sampling on our merged DataFrame
 
-[Here is the link to our NEO Data Points](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossery/CloseApproachesREADME.md)
+We initially performed a RandomForestSampling on our data using these variables:
 
-[Here is the link to our Close Approaches Data Points](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossery/DataPointREADME.md)
+['h', 'e', 'a', 'q', 'i', 'om', 'w', 'ma', 'ad', 'n', 'per', 'per_y', 'moid', 'moid_ld', 'moid_jup', 't_jup', 'sigma_e', 'sigma_a', 'sigma_q', 'sigma_i', 'sigma_om', 'sigma_w', 'sigma_ma', 'sigma_ad', 'sigma_n', 'sigma_tp', 'sigma_per', 'data_arc', 'condition_code', 'rms', 'dist', 'dist_min', 'dist_max', 'v_rel', 'v_inf', 'h_cad', 'class_AMO', 'class_APO', 'class_ATE', 'class_ETc', 'class_HTC', 'class_IEO', 'class_JFC', 'class_JFc']
 
-### Entity Relationship Diagram (ERD)
-For our database, since we had over 28,000 rows, we decided to use PostgreSQL because it stores large and sophisticated data safely and we could visually see the relationships between our data. The image below represents the tables of data that we uploaded onto the database. We used five main tables with the data to build and perform the machine learning model with the primary designation being the most common connection between all of our datasets:
+For more information about these variables please refer to the Glossary link below:
 
-![](Database/Resources/images/neo_erd_diagram.png)
+[NEO Data Points Glossary](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossary/CloseApproachesREADME.md)
 
-                                                                                                                                               
-### ETL Process
-A detailed description of the process of extracting Near Earth Objects and Close Approaches data, transformation and loading into an AWS RDS database. 
+[Close Approaches Data Points Glossary](https://github.com/AleeAlette1/NEOs_Project/blob/main/Database/Data_Points_Glossary/DataPointREADME.md)
 
-![](Database/Resources/images/ETL_Process_Detail.png)
+Our RandomForest Sampling revealed satisfactory results. Please see snippet below of confusion matrix for our RandomForest Sampling:
 
-### Close Approaches Data
-The close approaches data consists of a historical dataset of asteroid close appraoches to Earth which includes distance and velocity attributes. 
+![image](https://user-images.githubusercontent.com/86033316/150716443-27608e59-62fb-429c-b83d-eb0fb58599a3.png)
 
-<ins>**Historical Close Approaches**</ins><br/>
-The historical close approach data is accessed via an API call to the NASA/JPL web site which returns the data in JSON format. The JSON file is transformed into a pySpark DataFrame on via Google Colab. The transformed data in tabular format is then loaded into the Neo database residing in AWS RDS instance.
+As indicated in the confusion matrix, after running 5,624 predictions on our data, there was a total of (4) false predictions on NEOs that were potentially hazardous but our model prediction was a non-hazardous object.
 
-https://ssd-api.jpl.nasa.gov/cad.api?date-min=1900-01-01&date-max=2021-12-31&dist-max=0.2'
+### Performing Neural Networks to Generate More Accurate Predictions
+To improve the accuracy of our model, we sorted the features by their performance by calculating the feature importance using RandomForestSampling model. 
 
-<ins>**Future Close Approaches**</ins><br/>
-The close approaches of asteroids is accessed from a second API call to the NASA/JPL site. The data is returned in JSON format which is transformed in a pySpark DataFrame on Google Colab and then loaded into the Neo database on AWS RDS instance.
+![image](https://user-images.githubusercontent.com/86033316/150715204-f1ab0561-dfea-47a3-9253-dc13ad05dd45.png)
 
-https://ssd-api.jpl.nasa.gov/cad.api?date-min=2022-01-01&date-max=2100-01-01&dist-max=0.2
+Our group decided to select the top 4 important features from snippet above in addition to velocity variables ("v_inf" & "v_rel") from CAD (Close Approaches Data) to build a Neural Networks model.
+See snippet below for an overview of our model's properties
 
-### Near-Earth Obects (NEO)
-The asteroids classified as Near-Earth objects were downloaded manually from the NASA/JPL web site as a CSV file. This dataset is transformed via pySpark on Google Colab and loaded into the AWS RDS Neo database.
+![image](https://user-images.githubusercontent.com/86033316/150722947-38bd4e79-506e-458b-bee6-34c84a323f22.png)
 
-​
-​
-​
-| Notebook                 | Description         |
-|--------------------------|---------------------|
-| Spark_DataFrame_Neo_CSV  | Extract, Transform and Load Neo CSV file into AWS Neo database  |
-| Spark_DataFrame_Neo_Json | Extract, Transform, and Load Close Approach Json data into AWS Neo database|
-​
+As illustrated in above snippet, we can see that our model consists of two hidden layers with total of 12 hidden nodes in each layer. We selected "Relu" activation function for each layer.
+Please see below results of our neural networks model:
+
+![image](https://user-images.githubusercontent.com/86033316/150722903-697dd8b1-73a2-4603-beb6-2e1ddeee140f.png)
 
 
 #### Data Sources
