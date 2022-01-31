@@ -156,7 +156,7 @@ Our RandomForest Sampling revealed satisfactory results. Please see snippet belo
 
 As indicated in the confusion matrix, after running 5,624 predictions on our data, there was a total of (7) false predictions on NEOs that were potentially hazardous but our model prediction was a non-hazardous object. This result is not satisfactory due to criticality of identifiying potential hazardous asteroids.
 
-For more information on steps of our Random Forest Machine Learning model, please refer to the link below:
+For more information on our Random Forest Machine Learning model, please refer to the link below:
 https://github.com/AleeAlette1/NEOs_Project/blob/main/Machine_Learning/ipynb/FJ_ML2_RandomForest.ipynb
 ### Performing Neural Networks to Generate More Accurate Predictions
 To improve the accuracy of our model, we sorted the features by their performance by calculating the feature importance using RandomForestSampling model. 
@@ -173,6 +173,9 @@ Please see below results of our neural networks model:
 
 ![image](https://user-images.githubusercontent.com/86033316/151739236-4faa3df5-7dde-49ac-bea0-13e3d4460100.png)
 As displayed in above snippet, our neural network model is generating 99.54% accuracy. Accuracy represents the number of correctly classified data instances over the total number of data instances.
+
+For more information on our Neural Networks Machine Learning model, please refer to the link below:
+https://github.com/AleeAlette1/NEOs_Project/blob/main/Machine_Learning/ipynb/FJ_ML2_NN.ipynb
 
 ### Using Neural Networks trained model to Generate Accurate Predictions
 
