@@ -92,6 +92,7 @@ For our database, since we had over 28,000 rows, we decided to use PostgreSQL be
 
 ### Database Tables
 
+
 | Table Name    | Source Data                                                                                        |
 |---------------|----------------------------------------------------------------------------------------------------|
 | Neo           | CSV file downloaded from NASA website                                                              |
