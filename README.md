@@ -179,15 +179,12 @@ https://github.com/AleeAlette1/NEOs_Project/blob/main/Machine_Learning/ipynb/FJ_
 
 ### Using Neural Networks trained model to Generate Accurate Predictions
 
-
-
-
-#### Data Sources
-<a href="https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html" target="_blank">Small Object Database Query (NASA)</a>
-
-<a href="https://ssd-api.jpl.nasa.gov/doc/cad.html" target="_blank">SBDB Close Approach Data API (NASA)</a>
-
-<a href= "https://cneos.jpl.nasa.gov/about/basics.html" target="_blank"> NEOs Basics (NASA)</a>
+Using Pandas.read_csv, we imported a csv file that contains all future CAD (Close Approach Data) and NEOs (Near Earth Objects). This merged table is generated using PostgresSQL. See below snippet for list of imported dependencies.
+![image](https://user-images.githubusercontent.com/86033316/151741092-5cf753f1-ec85-46ea-bb58-9a2e3e1f9450.png)
+We initially assessed the number of null values in our impirted data frame and used .dropna() to ommit rows containing any null value. We then created a list of feature_columns ["moid","moid_ld","h","v_rel","v_inf"] which are the same features used in our trained neural networks model to seperate these columns from our future data. 
+As displayed below, our future_df has total of 11438 rows and 5 columns. 
+![image](https://user-images.githubusercontent.com/86033316/151742397-66ddcf35-e2a7-4175-b0e3-0aa4528fd200.png)
+We then used StandardScaler instance to scale out feature variables. We then imported our trained NN model ('NEOs_project_NN.h5') and started running predictions and normalizing the results. 
 
 ## Analysis Results
 
@@ -195,7 +192,12 @@ Based off of our analysis, we have determined there are 11,370 potentially hazar
 
 <img width="779" alt="Screen Shot 2022-01-30 at 8 13 20 PM" src="https://user-images.githubusercontent.com/88408350/151738009-c13a6155-1461-428a-9350-2621a4a936d0.png">
 
+#### Data Sources
+<a href="https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html" target="_blank">Small Object Database Query (NASA)</a>
 
+<a href="https://ssd-api.jpl.nasa.gov/doc/cad.html" target="_blank">SBDB Close Approach Data API (NASA)</a>
+
+<a href= "https://cneos.jpl.nasa.gov/about/basics.html" target="_blank"> NEOs Basics (NASA)</a>
 
 
 
