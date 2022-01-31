@@ -181,6 +181,9 @@ Please see below results of our neural networks model:
 
 ## Analysis Results
 
+Based off of our analysis, we have determined there are 11,370 potentially hazardous near-earth-objects. In the picture below, we can see the difference between our results and the original forecasted "pha."
+
+<img width="779" alt="Screen Shot 2022-01-30 at 8 13 20 PM" src="https://user-images.githubusercontent.com/88408350/151738009-c13a6155-1461-428a-9350-2621a4a936d0.png">
 
 
 
