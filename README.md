@@ -164,13 +164,13 @@ To improve the accuracy of our model, we sorted the features by their performanc
 Our group decided to select the top 3 important features from snippet above in addition to velocity variables ("v_inf" & "v_rel") from CAD (Close Approaches Data) to build a Neural Networks model.
 See snippet below for an overview of our model's properties
 
-![image](https://user-images.githubusercontent.com/86033316/150722947-38bd4e79-506e-458b-bee6-34c84a323f22.png)
+![image](https://user-images.githubusercontent.com/86033316/151739200-8db30f1a-eb6b-4966-bfd2-d7815450e2cf.png)
 
 As illustrated in above snippet, we can see that our model consists of two hidden layers with total of 12 hidden nodes in each layer. We selected "Relu" activation function for each layer.
 Please see below results of our neural networks model:
 
-![image](https://user-images.githubusercontent.com/86033316/150722903-697dd8b1-73a2-4603-beb6-2e1ddeee140f.png)
-
+![image](https://user-images.githubusercontent.com/86033316/151739236-4faa3df5-7dde-49ac-bea0-13e3d4460100.png)
+As displayed in above snippet, our neural network model is generating 99.54% accuracy. Accuracy represents the number of correctly classified data instances over the total number of data instances.
 
 #### Data Sources
 <a href="https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html" target="_blank">Small Object Database Query (NASA)</a>
