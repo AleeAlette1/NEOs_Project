@@ -156,16 +156,16 @@ For more information about these variables please refer to the Glossary link bel
 
 Our RandomForest Sampling revealed satisfactory results. Please see snippet below of confusion matrix for our RandomForest Sampling:
 
-![image](https://user-images.githubusercontent.com/86033316/150716443-27608e59-62fb-429c-b83d-eb0fb58599a3.png)
+![image](https://user-images.githubusercontent.com/86033316/151735769-3e810552-18ef-4713-8778-43b34b631818.png)
 
-As indicated in the confusion matrix, after running 5,624 predictions on our data, there was a total of (4) false predictions on NEOs that were potentially hazardous but our model prediction was a non-hazardous object.
+As indicated in the confusion matrix, after running 5,624 predictions on our data, there was a total of (7) false predictions on NEOs that were potentially hazardous but our model prediction was a non-hazardous object. This result is not satisfactory due to criticality of identifiying potential hazardous asteroids.
 
 ### Performing Neural Networks to Generate More Accurate Predictions
 To improve the accuracy of our model, we sorted the features by their performance by calculating the feature importance using RandomForestSampling model. 
 
-![image](https://user-images.githubusercontent.com/86033316/150715204-f1ab0561-dfea-47a3-9253-dc13ad05dd45.png)
+![image](https://user-images.githubusercontent.com/86033316/151736072-8b4aba5e-9922-49b2-b3a4-48bb240ef70b.png)
 
-Our group decided to select the top 4 important features from snippet above in addition to velocity variables ("v_inf" & "v_rel") from CAD (Close Approaches Data) to build a Neural Networks model.
+Our group decided to select the top 3 important features from snippet above in addition to velocity variables ("v_inf" & "v_rel") from CAD (Close Approaches Data) to build a Neural Networks model.
 See snippet below for an overview of our model's properties
 
 ![image](https://user-images.githubusercontent.com/86033316/150722947-38bd4e79-506e-458b-bee6-34c84a323f22.png)
