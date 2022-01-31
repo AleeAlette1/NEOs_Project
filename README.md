@@ -70,10 +70,12 @@ SciKitLearn is the ML library we'll be using to create a classifier. We used the
 - Random Forest Classifier because it provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of a large proportion of data. Our data sets are 92% accurate 
 - RandomOverSampler involves randomly duplicating examples from the minority class and adding them to the training dataset. This technique can be effective for those machine learning algorithms that are affected by a skewed distribution and where multiple duplicate examples for a given class can influence the fit of the model
 - SMOTE(synthetic minority oversampling technique) is one of the most commonly used oversampling methods to solve the imbalance problem. It aims to balance class distribution by randomly increasing minority class examples by replicating them
+- For our final predictions we used a Neural Network method.
+
+![](Database/Presentation/NEO Neural Network - diagram.png)
 
 ## Descriptions of our Data
 For our data and machine learning, we had one person working on our database and two people working on different sets of machine learning. For the database, we used ERD and Postgres to store and analyze our data. For the machine learning, both people analyzed NEOs that were potentially hazardous to Earth, but they used different methods. The first person used the Random Forest Classifier, which had 92% accuracy, and over/under sampling to test the accuracy of the data set. The second person used RandomOverSampler and SMOTE and found that these model fail to have an accurate prediction of hazardous object. It is always good to test different models on our machine learning to see if any data is skewed or give more accurate results.
-
 
 ## Database
 
@@ -157,7 +159,8 @@ Our RandomForest Sampling revealed satisfactory results. Please see snippet belo
 As indicated in the confusion matrix, after running 5,624 predictions on our data, there was a total of (7) false predictions on NEOs that were potentially hazardous but our model prediction was a non-hazardous object. This result is not satisfactory due to criticality of identifiying potential hazardous asteroids.
 
 For more information on our Random Forest Machine Learning model, please refer to the link below:
-https://github.com/AleeAlette1/NEOs_Project/blob/main/Machine_Learning/ipynb/FJ_ML2_RandomForest.ipynb
+[Random Forest Machine Learning Model](https://github.com/AleeAlette1/NEOs_Project/blob/main/Machine_Learning/ipynb/FJ_ML2_RandomForest.ipynb)
+
 ### Performing Neural Networks to Generate More Accurate Predictions
 To improve the accuracy of our model, we sorted the features by their performance by calculating the feature importance using RandomForestSampling model. 
 
@@ -175,15 +178,20 @@ Please see below results of our neural networks model:
 As displayed in above snippet, our neural network model is generating 99.54% accuracy. Accuracy represents the number of correctly classified data instances over the total number of data instances.
 
 For more information on our Neural Networks Machine Learning model, please refer to the link below:
-https://github.com/AleeAlette1/NEOs_Project/blob/main/Machine_Learning/ipynb/FJ_ML2_NN.ipynb
+[Neural Networks Machine Learning Model](https://github.com/AleeAlette1/NEOs_Project/blob/main/Machine_Learning/ipynb/FJ_ML2_NN.ipynb)
 
 ### Using Neural Networks trained model to Generate Accurate Predictions
 
 Using Pandas.read_csv, we imported a csv file that contains all future CAD (Close Approach Data) and NEOs (Near Earth Objects). This merged table is generated using PostgresSQL. See below snippet for list of imported dependencies.
+
 ![image](https://user-images.githubusercontent.com/86033316/151741092-5cf753f1-ec85-46ea-bb58-9a2e3e1f9450.png)
+
 We initially assessed the number of null values in our impirted data frame and used .dropna() to ommit rows containing any null value. We then created a list of feature_columns ["moid","moid_ld","h","v_rel","v_inf"] which are the same features used in our trained neural networks model to seperate these columns from our future data. 
+
 As displayed below, our future_df has total of 11438 rows and 5 columns. 
+
 ![image](https://user-images.githubusercontent.com/86033316/151742397-66ddcf35-e2a7-4175-b0e3-0aa4528fd200.png)
+
 We then used StandardScaler instance to scale out feature variables. We then imported our trained NN model ('NEOs_project_NN.h5') and started running predictions and normalizing the results. 
 
 ## Analysis Results
