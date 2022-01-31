@@ -70,7 +70,7 @@ SciKitLearn is the ML library we'll be using to create a classifier. We used the
 - Random Forest Classifier because it provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of a large proportion of data. Our data sets are 92% accurate 
 - RandomOverSampler involves randomly duplicating examples from the minority class and adding them to the training dataset. This technique can be effective for those machine learning algorithms that are affected by a skewed distribution and where multiple duplicate examples for a given class can influence the fit of the model
 - SMOTE(synthetic minority oversampling technique) is one of the most commonly used oversampling methods to solve the imbalance problem. It aims to balance class distribution by randomly increasing minority class examples by replicating them
-- For our final predictions we used a Neural Network method.
+- For our final predictions we used a Neural Network method because it provided us the most accurate results at 99.8%. However, true negatives make up a lot of that percentage, so our confidence matrix will show that most of the predictions were correct.
 
 ![](Presentation/NEO_Neural_Network_diagram.png)
 
@@ -185,7 +185,8 @@ For more information on our Neural Networks Machine Learning model, please refer
 
 ### Using Neural Networks trained model to Generate Accurate Predictions
 
-Using Pandas.read_csv, we imported a csv file that contains all future CAD (Close Approach Data) and NEOs (Near Earth Objects). This merged table is generated using PostgresSQL. See below snippet for list of imported dependencies.
+Using Pandas.read_csv, we imported a csv file that contains all future CAD (Close Approach Data) and NEOs (Near Earth Objects). This merged table is generated using PostgresSQL. 
+See below snippet for list of imported dependencies.
 
 ![image](https://user-images.githubusercontent.com/86033316/151741092-5cf753f1-ec85-46ea-bb58-9a2e3e1f9450.png)
 
@@ -199,7 +200,8 @@ We then used StandardScaler instance to scale out feature variables. We then imp
 
 ## Analysis Results
 
-Based off of our analysis, we have determined there are 11,370 potentially hazardous near-earth-objects. In the picture below, we can see the difference between our results and the original forecasted "pha."
+Based off of our analysis, we have determined there are 11,370 potentially hazardous Near-Earth-Objects. 
+In the picture below, we can see the difference between our results and the original forecasted "pha."
 
 <img width="779" alt="Screen Shot 2022-01-30 at 8 13 20 PM" src="https://user-images.githubusercontent.com/88408350/151738009-c13a6155-1461-428a-9350-2621a4a936d0.png">
 
