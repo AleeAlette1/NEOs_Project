@@ -72,7 +72,7 @@ SciKitLearn is the ML library we'll be using to create a classifier. We used the
 - SMOTE(synthetic minority oversampling technique) is one of the most commonly used oversampling methods to solve the imbalance problem. It aims to balance class distribution by randomly increasing minority class examples by replicating them
 - For our final predictions we used a Neural Network method.
 
-![](Database/Presentation/NEO_Neural_Network_diagram.png)
+![](Presentation/NEO_Neural_Network_diagram.png)
 
 ## Descriptions of our Data
 For our data and machine learning, we had one person working on our database and two people working on different sets of machine learning. For the database, we used ERD and Postgres to store and analyze our data. For the machine learning, both people analyzed NEOs that were potentially hazardous to Earth, but they used different methods. The first person used the Random Forest Classifier, which had 92% accuracy, and over/under sampling to test the accuracy of the data set. The second person used RandomOverSampler and SMOTE and found that these model fail to have an accurate prediction of hazardous object. It is always good to test different models on our machine learning to see if any data is skewed or give more accurate results.
