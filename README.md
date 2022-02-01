@@ -52,15 +52,20 @@ We have chosen the following:
 - A public AWS RDS database to store our data
 
 ### Dashboard Overview
-We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. Some data we are planning to show are maps of the different points in the world an asteroid could hit, the probability of an asteroid hitting us using different graphs, a scatterplot of the asteroids that are the biggest threat, and much more.
+We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. The data we have created are the following: 
+- A pie chart of which class each predicted PHA is apart of
+- First Observations the asteroids were made by each year 
+- First Observations the asteroids were made by each year 
+- Condition Code (9 being very confident in our predictions and 0 being very not confident in our predictions)
+- Distance per Each NEO
+- Velocity per Each NEO
+- Magnitude per Each NEO
 
-On top of working in Tableau, we have been working on our presentation in Google Slides. Here we will visually and orally explain our project. We will address the following: 
-- Selected topic
-- Reason topic was selected
-- Description of the source of data
-- Questions the team hopes to answer with the data
-- Description of the data exploration phase of the project
-- Description of the analysis phase of the project
+The interactive elements will be within the Distance, Velocity, and Magnitude per Each NEO tabs. The viewer will be able to toggle over the range of values to show the least and the most distance, velocity, or magnitude. The viewer will also be able to press on the drop down menu that has a list of every name to choose a specific NEO. 
+
+<img width="884" alt="Screen Shot 2022-01-31 at 7 27 27 PM" src="https://user-images.githubusercontent.com/88408350/151909798-f19e2e6b-8aa7-4009-829c-a30cd9e27a3d.png">
+
+<img width="278" alt="Screen Shot 2022-01-31 at 7 31 07 PM" src="https://user-images.githubusercontent.com/88408350/151909806-fb3ff25b-4f1b-4640-a2d7-9496e57b7164.png">
 
 ### Database Overview
 For our database, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). For our dashboard, we will be using Tableau to create a story of our data. 
