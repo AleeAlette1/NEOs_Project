@@ -24,7 +24,7 @@ Our group chose this topic because we wanted to build a binary classifier model 
 
 ## Questions We Would Like to Answer:
 
-1. How many close approach objects will we have in the next decade?
+1. Which NEOs will be the closest approach? 
 2. Can we predict potentially hazardous objects in the future?
 3. Which NEOs are the most potentially hazardous?
 
