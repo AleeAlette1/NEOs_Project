@@ -55,7 +55,7 @@ We have chosen the following:
 We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. The data we have created are the following: 
 - A pie chart of which class each predicted PHA is apart of
 - First Observations the asteroids were made by each year 
-- First Observations the asteroids were made by each year 
+- Last Observations the asteroids were made by each year 
 - Condition Code (9 being very confident in our predictions and 0 being very not confident in our predictions)
 - Distance per Each NEO
 - Velocity per Each NEO
