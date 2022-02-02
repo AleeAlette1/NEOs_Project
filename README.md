@@ -52,7 +52,11 @@ We have chosen the following:
 - A public AWS RDS database to store our data
 
 ### Dashboard Overview
+
+<a href= "https://10ay.online.tableau.com/t/neosproject/authoring/NEOsDashboard/Class/NEOs%20Project#2" target="_blank"> Tableau Story</a> 
+
 We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. The data we have created are the following: 
+
 - A pie chart of which class each predicted PHA is apart of
 - First Observations the asteroids were made by each year 
 - Last Observations the asteroids were made by each year 
