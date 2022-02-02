@@ -220,6 +220,8 @@ In the picture below, we can see the difference between our results and the orig
 
 <a href= "https://cneos.jpl.nasa.gov/about/basics.html" target="_blank"> NEOs Basics (NASA)</a>
 
+### Research sources
+https://www.wise-geek.com/what-factors-determine-the-damage-of-an-asteroid-impact.htm#:~:text=The%20most%20important%20factor%20determining,the%20square%20of%20its%20velocity.
 
 
 
