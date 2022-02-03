@@ -1,7 +1,7 @@
 # NEOs Project
 UC Berkeley Data Analytics Bootcamp Final Project
 
-[NEOs Presentation](https://github.com/AleeAlette1/NEOs_Project/blob/main/Presentation/NEOs%20Project%20Slides.pdf)
+<a href= "https://docs.google.com/presentation/d/1BQlw8KsA-17b0CTgA-Jki0ccUJvn-29yCgjgTW-MsKI/edit?usp=sharing" target="_blank">NEOs Google Slides</a> 
 
 <a href= "https://public.tableau.com/views/NEOsProject/NEOsProject?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" target="_blank">Tableau Story</a> 
 
