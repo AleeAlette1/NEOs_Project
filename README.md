@@ -68,7 +68,6 @@ We will be using Tablaeu to create our final dashboard because it is visually ap
 The interactive elements will be within the Distance, Velocity, and Magnitude per Each NEO tabs. The viewer will be able to toggle over the range of values to show the least and the most distance, velocity, or magnitude. The viewer will also be able to press on the drop down menu that has a list of every name to choose a specific NEO. 
 
 <img width="884" alt="Screen Shot 2022-01-31 at 7 27 27 PM" src="https://user-images.githubusercontent.com/88408350/151909798-f19e2e6b-8aa7-4009-829c-a30cd9e27a3d.png">
-<img width="247" alt="Screen Shot 2022-01-31 at 7 44 58 PM" src="https://user-images.githubusercontent.com/88408350/151909909-df7e2535-4d54-45f9-8508-c9958cb3cc0e.png">
 
 ### Database Overview
 For our database, we have used pgAdmin within PostgreSQL to see the connections between the different datasets. The varaible we are looking for is PDES (primary designation for numbered asteroids). For our dashboard, we will be using Tableau to create a story of our data. 
