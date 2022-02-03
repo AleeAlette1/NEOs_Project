@@ -3,6 +3,8 @@ UC Berkeley Data Analytics Bootcamp Final Project
 
 <a href= "https://docs.google.com/presentation/d/1BQlw8KsA-17b0CTgA-Jki0ccUJvn-29yCgjgTW-MsKI/edit?usp=sharing*" target="_blank"> NEOs Google Slide</a> 
 
+<a href= "https://public.tableau.com/views/NEOsProject/NEOsProject?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" target="_blank">Tableau Story</a> 
+
 ## Group Members:
 |       Member       |      Role      |                   Responsibilities                  |
 |--------------------|----------------|-----------------------------------------------------|
@@ -52,8 +54,6 @@ We have chosen the following:
 - A public AWS RDS database to store our data
 
 ### Dashboard Overview
-
-<a href= "https://public.tableau.com/views/NEOsProject/NEOsProject?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" target="_blank">Tableau Story</a> 
 
 We will be using Tablaeu to create our final dashboard because it is visually appealing and it is interactive for the viewers. We will be creating a story within Tablaeu so that the users can click through different section titles to see an array of data. The data we have created are the following: 
 
