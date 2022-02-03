@@ -207,10 +207,10 @@ We then used StandardScaler instance to scale out feature variables. We then imp
 
 ## Analysis Results
 
-Based off of our analysis, we have determined there are 11,370 potentially hazardous Near-Earth-Objects. 
-In the picture below, we can see the difference between our results and the original forecasted "pha."
+Based off of our analysis, we have determined there are 11,370 potentially hazardous Near-Earth-Objects. We have an accuracy score of 78%. In conclusion, we are not "doomed" by a near-Earth-object any time soon. 
 
-<img width="779" alt="Screen Shot 2022-01-30 at 8 13 20 PM" src="https://user-images.githubusercontent.com/88408350/151738009-c13a6155-1461-428a-9350-2621a4a936d0.png">
+<img width="453" alt="Screen Shot 2022-02-02 at 4 19 53 PM" src="https://user-images.githubusercontent.com/88408350/152259951-a09e6b9c-d768-4a54-923d-92d30879e409.png">
+
 
 #### Data Sources
 <a href="https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html" target="_blank">Small Object Database Query (NASA)</a>
