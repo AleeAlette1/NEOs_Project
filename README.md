@@ -219,8 +219,8 @@ Based off of our analysis, we have determined there are 11,370 potentially hazar
 
 <a href= "https://cneos.jpl.nasa.gov/about/basics.html" target="_blank"> NEOs Basics (NASA)</a>
 
-### Research sources
-https://www.wise-geek.com/what-factors-determine-the-damage-of-an-asteroid-impact.htm#:~:text=The%20most%20important%20factor%20determining,the%20square%20of%20its%20velocity.
+#### Research sources
+[What Factors Determine the Damage of an Asteroid Impact](https://www.wise-geek.com/what-factors-determine-the-damage-of-an-asteroid-impact.htm#:~:text=The%20most%20important%20factor%20determining,the%20square%20of%20its%20velocity.)
 
 
 
